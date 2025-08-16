@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import AuthModals from "@/components/auth/AuthModals";
 import { useAuth } from "@/contexts/AuthContext";
 import { Badge } from "@/components/ui/badge";
+import LanguageToggle from "@/components/LanguageToggle";
 import {
   CheckCircle,
   ArrowRight,
