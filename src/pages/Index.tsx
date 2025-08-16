@@ -293,20 +293,16 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">Customer Support Agent</h3>
+                  <h3 className="text-2xl font-bold">{t('agents.customerSupport.title')}</h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Our intelligent customer support agent handles inquiries
-                    24/7, providing instant responses to common questions,
-                    routing complex issues to human agents, and maintaining
-                    complete conversation history. Trained on your knowledge
-                    base for accurate, personalized support.
+                    {t('agents.customerSupport.description')}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                     >
-                      Chat Now
+                      {t('agents.customerSupport.chatNow')}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -321,20 +317,16 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">Sales Assistant Agent</h3>
+                  <h3 className="text-2xl font-bold">{t('agents.salesAssistant.title')}</h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Boost your sales with our AI-powered sales assistant.
-                    Qualifies leads, schedules meetings, provides product
-                    information, and follows up with prospects. Integrates with
-                    your CRM to track opportunities and conversion rates,
-                    ensuring no lead falls through the cracks.
+                    {t('agents.salesAssistant.description')}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                     >
-                      Chat Now
+                      {t('agents.salesAssistant.chatNow')}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -349,21 +341,16 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">Data Analyst Agent</h3>
+                  <h3 className="text-2xl font-bold">{t('agents.dataAnalyst.title')}</h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Transform your data into actionable insights with our
-                    advanced data analyst agent. Performs complex analysis,
-                    generates reports, creates visualizations, and identifies
-                    trends. Connects to your databases and analytics tools to
-                    provide real-time business intelligence and predictive
-                    analytics.
+                    {t('agents.dataAnalyst.description')}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700"
                     >
-                      Chat Now
+                      {t('agents.dataAnalyst.chatNow')}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
