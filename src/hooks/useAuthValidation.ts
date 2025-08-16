@@ -68,7 +68,7 @@ export function useLoginValidation() {
         const success = await login(data.email, data.password);
 
         if (success) {
-          toast.success("Welcome back to AgentFlow!");
+          toast.success("Welcome back to Alfa Automations!");
           return true;
         } else {
           setErrors({
@@ -199,7 +199,7 @@ export function useRegisterValidation() {
 
         if (success) {
           toast.success(
-            "Welcome to AgentFlow! Your account has been created successfully.",
+            "Welcome to Alfa Automations! Your account has been created successfully.",
           );
           return true;
         } else {

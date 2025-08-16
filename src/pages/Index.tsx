@@ -1,9 +1,13 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import AuthModals from "@/components/auth/AuthModals";
 import { useAuth } from "@/contexts/AuthContext";
 import { Badge } from "@/components/ui/badge";
+import LanguageToggle from "@/components/LanguageToggle";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import {
   CheckCircle,
   ArrowRight,
@@ -16,6 +20,7 @@ import {
 const Index = () => {
   const { user, loading } = useAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [loginOpen, setLoginOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
   const [showToTop, setShowToTop] = useState(false);
@@ -65,9 +70,9 @@ const Index = () => {
             <Bot className="h-8 w-8 text-white animate-pulse" />
           </div>
           <h2 className="text-xl font-semibold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-            AgentFlow
+            Alfa Automations
           </h2>
-          <p className="text-muted-foreground">Loading...</p>
+          <p className="text-muted-foreground">{t("common.loading")}</p>
         </div>
       </div>
     );
@@ -76,65 +81,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container flex h-16 items-center justify-between -mt-16">
-          <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-600">
-              <Bot className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              AgentFlow
-            </span>
-          </div>
-          <div className="hidden md:flex items-center space-x-6">
-            {/* Navigation Links - Archived */}
-            {/*
-            <a
-              href="#features"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Features
-            </a>
-            <a
-              href="#pricing"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Pricing
-            </a>
-            <a
-              href="#testimonials"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Testimonials
-            </a>
-            */}
-            <Button variant="outline" size="sm" onClick={openLoginModal}>
-              Sign In
-            </Button>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-primary to-purple-600"
-              onClick={openRegisterModal}
-            >
-              Get Started
-            </Button>
-          </div>
-
-          {/* Mobile Menu for Authentication */}
-          <div className="md:hidden flex items-center space-x-2">
-            <Button variant="outline" size="sm" onClick={openLoginModal}>
-              Sign In
-            </Button>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-primary to-purple-600"
-              onClick={openRegisterModal}
-            >
-              Get Started
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <Header
+        variant="default"
+        showLanguageToggle={false}
+        showAuthButtons={true}
+        onLoginClick={openLoginModal}
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-center overflow-hidden bg-gradient-to-br from-background via-primary/5 to-purple-500/10">
@@ -149,7 +101,7 @@ const Index = () => {
               className="text-xs uppercase tracking-wider border-primary/30 bg-primary/5 text-primary font-mono"
             >
               <Bot className="w-3 h-3 mr-2" />
-              AI AUTOMATION PLATFORM
+              {t("hero.aiPlatform")}
             </Badge>
           </div>
 
@@ -158,16 +110,14 @@ const Index = () => {
             {/* Main Heading */}
             <div className="space-y-6">
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05]">
-                <div className="block">AI agents for</div>
+                <div className="block">{t("hero.title1")}</div>
                 <div className="block bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                  your business
+                  {t("hero.title2")}
                 </div>
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Deploy intelligent AI agents that handle customer support,
-                automate workflows, and scale your operations 24/7. The most
-                powerful platform for business automation.
+                {t("hero.subtitle")}
               </p>
             </div>
 
@@ -196,19 +146,21 @@ const Index = () => {
               <div className="max-w-4xl mx-auto">
                 {/* Demo Button */}
                 <div className="relative inline-block">
-                  <Button
-                    size="lg"
-                    variant="secondary"
-                    className="h-20 px-16 text-lg font-semibold bg-gradient-to-r from-amber-100 to-orange-100 hover:from-amber-200 hover:to-orange-200 text-gray-900 rounded-full shadow-2xl border-2 border-amber-200/50 transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="flex items-center gap-4">
-                      <span>Try our AI Agent</span>
-                      <div className="relative">
-                        <Mic className="h-6 w-6" />
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-600 rounded-full animate-ping opacity-20"></div>
+                  <a href="https://t.me/+XiVkBHhA6HM2YTM0" target="_blank" rel="noopener noreferrer">
+                    <Button
+                      size="lg"
+                      variant="secondary"
+                      className="h-20 px-16 text-lg font-semibold bg-gradient-to-r from-amber-100 to-orange-100 hover:from-amber-200 hover:to-orange-200 text-gray-900 rounded-full shadow-2xl border-2 border-amber-200/50 transition-all duration-300 hover:scale-105"
+                    >
+                      <div className="flex items-center gap-4">
+                        <span>{t("hero.tryAgent")}</span>
+                        <div className="relative">
+                          <Mic className="h-6 w-6" />
+                          <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-600 rounded-full animate-ping opacity-20"></div>
+                        </div>
                       </div>
-                    </div>
-                  </Button>
+                    </Button>
+                  </a>
 
                   {/* Audio Visualization */}
                   <div className="absolute inset-0 -z-10 flex items-center justify-center">
@@ -247,17 +199,16 @@ const Index = () => {
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline" className="border-primary/20">
               <Bot className="w-3 h-3 mr-1" />
-              AI Agents
+              {t("agents.badge")}
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold">
-              Meet our{" "}
+              {t("agents.title")}{" "}
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                AI Agents
+                {t("agents.titleHighlight")}
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Specialized AI agents ready to handle your most complex tasks.
-              Choose the right agent for your needs.
+              {t("agents.subtitle")}
             </p>
           </div>
 
@@ -265,9 +216,9 @@ const Index = () => {
           <div className="flex justify-center mb-12">
             <div className="inline-flex rounded-lg bg-muted p-1">
               {[
-                { name: "Customer Support", id: 0 },
-                { name: "Sales Assistant", id: 1 },
-                { name: "Data Analyst", id: 2 },
+                { name: t("agents.tabs.customerSupport"), id: 0 },
+                { name: t("agents.tabs.salesAssistant"), id: 1 },
+                { name: t("agents.tabs.dataAnalyst"), id: 2 },
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -293,20 +244,18 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">Customer Support Agent</h3>
+                  <h3 className="text-2xl font-bold">
+                    {t("agents.customerSupport.title")}
+                  </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Our intelligent customer support agent handles inquiries
-                    24/7, providing instant responses to common questions,
-                    routing complex issues to human agents, and maintaining
-                    complete conversation history. Trained on your knowledge
-                    base for accurate, personalized support.
+                    {t("agents.customerSupport.description")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                     >
-                      Chat Now
+                      {t("agents.customerSupport.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -321,20 +270,18 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">Sales Assistant Agent</h3>
+                  <h3 className="text-2xl font-bold">
+                    {t("agents.salesAssistant.title")}
+                  </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Boost your sales with our AI-powered sales assistant.
-                    Qualifies leads, schedules meetings, provides product
-                    information, and follows up with prospects. Integrates with
-                    your CRM to track opportunities and conversion rates,
-                    ensuring no lead falls through the cracks.
+                    {t("agents.salesAssistant.description")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                     >
-                      Chat Now
+                      {t("agents.salesAssistant.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -349,21 +296,18 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">Data Analyst Agent</h3>
+                  <h3 className="text-2xl font-bold">
+                    {t("agents.dataAnalyst.title")}
+                  </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    Transform your data into actionable insights with our
-                    advanced data analyst agent. Performs complex analysis,
-                    generates reports, creates visualizations, and identifies
-                    trends. Connects to your databases and analytics tools to
-                    provide real-time business intelligence and predictive
-                    analytics.
+                    {t("agents.dataAnalyst.description")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700"
                     >
-                      Chat Now
+                      {t("agents.dataAnalyst.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -474,7 +418,7 @@ const Index = () => {
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              See how businesses are transforming their operations with AgentFlow
+              See how businesses are transforming their operations with Alfa Automations
             </p>
           </div>
           // ... Testimonials content ...
@@ -511,112 +455,7 @@ const Index = () => {
       */}
 
       {/* Footer */}
-      <footer className="border-t bg-gradient-to-br from-secondary/30 to-background">
-        <div className="container py-16">
-          <div className="grid md:grid-cols-5 gap-8">
-            <div className="md:col-span-2 space-y-4">
-              <div className="flex items-center space-x-2">
-                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-600">
-                  <Bot className="h-5 w-5 text-white" />
-                </div>
-                <span className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                  AgentFlow
-                </span>
-              </div>
-              <p className="text-muted-foreground max-w-md leading-relaxed">
-                Intelligent AI agents for business automation and growth.
-                Transform your operations with enterprise-grade AI that scales.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-semibold">Product</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-foreground transition-colors"
-                  >
-                    Features
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-foreground transition-colors"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-foreground transition-colors"
-                  >
-                    Integrations
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-semibold">Support</h4>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-foreground transition-colors"
-                  >
-                    Help Center
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-foreground transition-colors"
-                  >
-                    Documentation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="hover:text-foreground transition-colors"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">
-              © 2025 AgentFlow. All rights reserved.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
-                to="/terms"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Terms of Service
-              </Link>
-              <Link
-                to="/privacy-policy"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                to="/cookie-policy"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Cookie Policy
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
       {/* Floating "To Top" Button */}
       {showToTop && (
@@ -626,7 +465,7 @@ const Index = () => {
           size="icon"
         >
           <ArrowUp className="h-5 w-5 text-white group-hover:scale-110 transition-transform" />
-          <span className="sr-only">Scroll to top</span>
+          <span className="sr-only">{t("common.scrollToTop")}</span>
         </Button>
       )}
 

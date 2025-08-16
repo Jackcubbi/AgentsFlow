@@ -50,6 +50,14 @@ export default {
         ],
       },
       colors: {
+        // Custom brand color palette
+        brand: {
+          aero: "#6CC1E3", // Light blue
+          "dark-cornflower": "#2E4392", // Dark blue
+          "bright-gray": "#E6E9EF", // Light gray
+          "celestial-blue": "#4995BE", // Medium blue
+          "macaroni-cheese": "#F9CA89", // Orange
+        },
         // Exact Airbnb brand colors
         airbnb: {
           primary: "#FF385C", // Signature Airbnb red

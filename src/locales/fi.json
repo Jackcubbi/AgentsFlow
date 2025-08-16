@@ -1,0 +1,794 @@
+{
+  "header": {
+    "signIn": "Kirjaudu sisään",
+    "getStarted": "Aloita",
+    "dashboard": "Hallintapaneeli",
+    "backHome": "Takaisin etusivulle"
+  },
+  "hero": {
+    "aiPlatform": "TEKOÄLY AUTOMAATIOALUSTA",
+    "title1": "Tekoälyagentit",
+    "title2": "yrityksellesi",
+    "subtitle": "Ota käyttöön älykkäät tekoälyagentit, jotka hoitavat asiakastukea, automatisoivat työnkulkuja ja skaalautuvat toimintaasi 24/7. Tehokkain alusta liiketoiminnan automaatioon.",
+    "tryAgent": "Kokeile tekoälyagenttiamme"
+  },
+  "agents": {
+    "badge": "Tekoälyagentit",
+    "title": "Tutustu",
+    "titleHighlight": "tekoälyagentteihimme",
+    "subtitle": "Erikoistuneet tekoälyagentit valmiina hoitamaan monimutkaisimmat tehtäväsi. Valitse tarpeisiisi sopiva agentti.",
+    "tabs": {
+      "customerSupport": "Asiakastuki",
+      "salesAssistant": "Myyntiavustaja",
+      "dataAnalyst": "Data-analyytikko"
+    },
+    "customerSupport": {
+      "title": "Asiakastukiagentti",
+      "description": "Älykäs asiakastukiagenttimme hoitaa kyselyt 24/7, tarjoaa välittömät vastaukset yleisiin kysymyksiin, ohjaa monimutkaiset asiat ihmisagenteille ja ylläpitää täydellisen keskusteluhistorian. Koulutettu tietokantaasi varten tarkkaa, personoitua tukea varten.",
+      "chatNow": "Keskustele nyt"
+    },
+    "salesAssistant": {
+      "title": "Myyntiavustaja-agentti",
+      "description": "Tehosta myyntiäsi tekoälykäyttöisellä myyntiavustajalla. Kvalifioi liidejä, varaa tapaamisia, tarjoaa tuotetietoja ja seuraa potentiaalisia asiakkaita. Integroituu CRM-järjestelmääsi mahdollisuuksien ja konversioasteiden seuraamiseksi, varmistaen ettei mikään liidi putoa verkosta.",
+      "chatNow": "Keskustele nyt"
+    },
+    "dataAnalyst": {
+      "title": "Data-analyytikkoagentti",
+      "description": "Muunna datasi toimiviksi oivalluksiksi kehittyneen data-analyytikkoagenttimme avulla. Suorittaa monimutkaisia analyysejä, luo raportteja, tuottaa visualisointeja ja tunnistaa trendejä. Yhdistyy tietokantoihisi ja analytiikkatyökaluihisi tarjotakseen reaaliaikaista liiketoimintatietoa ja ennakoivaa analytiikkaa.",
+      "chatNow": "Keskustele nyt"
+    }
+  },
+  "footer": {
+    "description": "Älykkäät tekoälyagentit liiketoiminnan automaatioon ja kasvuun. Muuta toimintaasi yritystason tekoälyllä, joka skaalautuu.",
+    "product": "Tuote",
+    "support": "Tuki",
+    "features": "Ominaisuudet",
+    "pricing": "Hinnoittelu",
+    "integrations": "Integraatiot",
+    "helpCenter": "Tukikeskus",
+    "documentation": "Dokumentaatio",
+    "contact": "Yhteystiedot",
+    "copyright": "© 2025 Alfa Automations. Kaikki oikeudet pidätetään.",
+    "terms": "Käyttöehdot",
+    "privacy": "Tietosuojakäytäntö",
+    "cookies": "Evästekäytäntö",
+    "language": "Kieli"
+  },
+  "pricing": {
+    "badge": "Hinnoittelu",
+    "title": "Hinnoittelu joka skaalautuu",
+    "titleHighlight": "kasvusi mukana",
+    "subtitle": "Läpinäkyvät paketit EU-hosting:lla, valmiilla asennuksella ja selkeillä kiintiöillä.",
+    "setupFee": "Asennus",
+    "mostPopular": "Suosituin",
+    "getStarted": "Aloita",
+    "upgrade": "Päivitä",
+    "contactSales": "Ota yhteyttä myyntiin",
+    "dashboard": "Hallintapaneeli",
+    "backHome": "Takaisin etusivulle",
+    "plans": {
+      "starter": {
+        "name": "Aloittaja",
+        "description": "Pilotteja ja yksittäisiä käyttötapauksia varten.",
+        "features": {
+          "assistants": "1 avustaja (henkilökohtainen tai ryhmä)",
+          "messages": "3 000 viestiä/kk",
+          "ocr": "200 OCR-sivua",
+          "voice": "60 ääniminuuttia",
+          "logs": "7 päivän lokit",
+          "support": "Sähköpostituki (48h)"
+        }
+      },
+      "pro": {
+        "name": "Pro",
+        "description": "Kasvaville tiimeille ja pk-yritysten toiminnoille.",
+        "features": {
+          "assistants": "Jopa 3 avustajaa",
+          "messages": "12 000 viestiä/kk",
+          "ocr": "800 OCR-sivua",
+          "voice": "240 ääniminuuttia",
+          "integrations": "Google Sheets/HubSpot synkronointi",
+          "support": "Prioriteettituki (NBD)",
+          "logs": "30 päivän lokit"
+        }
+      },
+      "business": {
+        "name": "Business",
+        "description": "Monien avustajien työnkulkuja ja suurempia volyymejä varten.",
+        "features": {
+          "assistants": "Jopa 5 avustajaa + staging",
+          "messages": "30 000 viestiä/kk",
+          "ocr": "2 000 OCR-sivua",
+          "voice": "600 ääniminuuttia",
+          "sla": "SLA 99,5%, valvonta ja hälytykset",
+          "webhooks": "Mukautetut webhookit",
+          "logs": "60 päivän lokit"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Mukautettu",
+        "setupFee": "alkaen €1 500",
+        "description": "Yksityinen EU-deployment, SSO, audit-lokit, DPA, mukautetut SLA:t ja korkeammat kiintiöt.",
+        "features": {
+          "deployment": "Yksityinen EU-deployment",
+          "sso": "SSO ja audit-lokit",
+          "audit": "Audit-lokit",
+          "dpa": "DPA-vaatimustenmukaisuus",
+          "sla": "Mukautetut SLA:t",
+          "quotas": "Korkeammat kiintiöt"
+        }
+      }
+    },
+    "overage": {
+      "title": "Ylityshinnoittelu",
+      "messages": "viestiä",
+      "ocrPages": "OCR-sivua",
+      "voiceMin": "ääniminuuttia",
+      "description": "Kaikki paketit sisältävät EU-hosting:n (Hetzner) ja kuukausittaiset käyttöraportit. LLM/API-käyttö sisältyy pakettien kiintiöihin asti; sen yli sovelletaan ylityshinnoittelua."
+    },
+    "hosting": {
+      "title": "EU-hosting",
+      "description": "Turvallinen hosting EU:ssa Hetznerin infrastruktuurilla tietojen vaatimustenmukaisuutta ja matalaa viivettä varten."
+    },
+    "reports": {
+      "title": "Kuukausiraportit",
+      "description": "Yksityiskohtaiset käyttöanalytiikka- ja raportit toimitetaan kuukausittain tekoälyavustajan suorituskyvyn seuraamiseksi."
+    },
+    "cta": {
+      "title": "Valmis aloittamaan?",
+      "subtitle": "Liity tuhansien yritysten joukkoon, jotka käyttävät tekoälyavustajia toimintojensa skaalaamiseen.",
+      "getStarted": "Aloita tänään",
+      "contactSales": "Ota yhteyttä myyntiin"
+    }
+  },
+  "terms": {
+    "badge": "Juridiset asiakirjat",
+    "title": "Käyttö",
+    "titleHighlight": "ehdot",
+    "subtitle": "Lue nämä ehdot huolellisesti ennen Alfa Automationsin tekoälyautomaatioalustan ja -palvelujen käyttöä.",
+    "lastUpdated": "Viimeksi päivitetty: 1. tammikuuta 2025",
+    "version": "Versio 2.1",
+    "importantNotice": {
+      "title": "Tärkeä huomautus",
+      "description": "Nämä käyttöehdot muodostavat oikeudellisesti sitovan sopimuksen sinun ja Alfa Automationsin välille. Käyttämällä palvelujamme hyväksyt nämä ehdot. Jos et hyväksy näitä ehtoja, älä käytä palvelujamme."
+    },
+    "sections": {
+      "acceptance": {
+        "title": "Ehtojen hyväksyminen",
+        "content1": "Käyttämällä Alfa Automationsin palveluja, mukaan lukien verkkosivustomme, alustan, API:n tai muut niihin liittyvät palvelut (yhdessä \"Palvelut\"), tunnustat lukeneesi, ymmärtäneesi ja sitoutuvasi näihin käyttöehtoihin (\"Ehdot\").",
+        "content2": "Nämä ehdot koskevat kaikkia palvelujen käyttäjiä, mukaan lukien vierailijat, rekisteröityneet käyttäjät ja maksavat asiakkaat. Jos käytät palveluja organisaation puolesta, vakuutat ja takaat, että sinulla on valtuudet sitoa kyseinen organisaatio näihin ehtoihin."
+      },
+      "description": {
+        "title": "Palvelujen kuvaus",
+        "content1": "Alfa Automations tarjoaa tekoälykäyttöisiä automaatioalusta-palveluja, jotka mahdollistavat yritysten älykkäiden agenttien käyttöönoton asiakastukeen, myyntiin, toimintoihin ja muihin liiketoimintafunktioihin. Palvelumme sisältävät:",
+        "features": [
+          "Tekoälykäyttöiset chatbotit ja virtuaaliavustajat",
+          "Automatisoidut työnkulun hallintajärjestelmät",
+          "Asiakassuhdehallinnan (CRM) integraatio",
+          "Analytiikka- ja raportointityökalut",
+          "API-pääsy mukautettuihin integraatioihin",
+          "Ammattimaiset palvelut ja tuki"
+        ]
+      },
+      "accounts": {
+        "title": "Käyttäjätilit ja rekisteröityminen",
+        "content1": "Päästäksesi käsiksi tiettyihin palvelujemme ominaisuuksiin, sinun on luotava tili. Sitoudut:",
+        "requirements": [
+          "Antamaan tarkkoja, ajantasaisia ja täydellisiä tietoja",
+          "Ylläpitämään tilisi tunnistetietojen turvallisuutta",
+          "Päivittämään tilitietosi viipymättä tarvittaessa",
+          "Hyväksymään vastuun kaikista tilisi alaisista toiminnoista",
+          "Ilmoittamaan meille välittömästi valtuuttamattomasta käytöstä"
+        ],
+        "content2": "Et saa luoda tilejä automatisoiduilla keinoilla tai luoda useita tilejä samalle henkilölle tai yhteisölle ilman nimenomaista lupaamme."
+      },
+      "acceptableUse": {
+        "title": "Hyväksyttävän käytön käytäntö",
+        "content1": "Sitoudut olemaan käyttämättä palveluja:",
+        "prohibited": [
+          "Lakien tai määräysten rikkomiseen",
+          "Muiden tekijänoikeuksien rikkomiseen",
+          "Haitallisen, loukkaavan tai sopimattoman sisällön lähettämiseen",
+          "Yrittämään saada luvattomasti pääsyä järjestelmiimme",
+          "Häiritsemään palvelujen asianmukaista toimintaa",
+          "Käyttämään palveluja laittomiin tai petollisiin toimintoihin",
+          "Roskapostittamaan, häiritsemään tai hyväksikäyttämään muita käyttäjiä",
+          "Käänteissuunnittelemaan tai yrittämään poimia lähdekoodia"
+        ]
+      },
+      "billing": {
+        "title": "Tilaus ja laskutus",
+        "content1": "Palvelujamme tarjotaan erilaisten tilaussuunnitelmien kautta. Tilaamalla maksullisen suunnitelman sitoudut:",
+        "agreements": [
+          "Maksamaan kaikki valitsemassasi suunnitelmassa kuvatut maksut",
+          "Antamaan tarkkoja laskutus- ja maksutietoja",
+          "Valtuuttamaan meidät veloittamaan maksutapaasi automaattisesti",
+          "Maksamaan kaikki tilaukseesi liittyvät verot"
+        ],
+        "content2": "Tilauksesta veloitetaan etukäteen kuukausi- tai vuosiperusteisesti. Voimme muuttaa hinnoitteluamme 30 päivän ennakkoilmoituksella nykyisille tilaajille."
+      },
+      "dataPrivacy": {
+        "title": "Tiedot ja yksityisyys",
+        "content1": "Suhtaudumme tietosuojaan vakavasti. Henkilötietojesi keräämistä, käyttöä ja suojaamista säätelee tietosuojakäytäntömme, joka on sisällytetty näihin ehtoihin viittauksena.",
+        "content2": "Säilytät omistusoikeuden kaikkiin palveluihimme lähettämiisi tietoihin. Käyttämällä palvelujamme myönnät meille rajoitetun lisenssin käsitellä tietojasi yksinomaan palvelujemme tarjoamista varten.",
+        "content3": "Toteutamme alan standardien mukaisia turvatoimia tietojesi suojaamiseksi, mutta emme voi taata absoluuttista turvallisuutta."
+      },
+      "intellectualProperty": {
+        "title": "Immateriaalioikeudet",
+        "content1": "Palvelut, mukaan lukien kaikki sisältö, ominaisuudet ja toiminnallisuus, ovat Alfa Automationsin omaisuutta ja niitä suojaavat tekijänoikeus-, tavaramerkki- ja muut immateriaalioikeuslait.",
+        "content2": "Sinulle myönnetään rajoitettu, ei-yksinomainen, ei-siirrettävä lisenssi käyttää palveluja näiden ehtojen mukaisesti. Tämä lisenssi ei sisällä oikeutta:",
+        "restrictions": [
+          "Jälleenmyydä tai hyödyntää palveluja kaupallisesti",
+          "Muokata, mukauttaa tai luoda johdannaisteoksia",
+          "Käyttää tavaramerkkejämme tai brändäystämme ilman lupaa",
+          "Poistaa tai muuttaa omistajuusilmoituksia"
+        ]
+      },
+      "liability": {
+        "title": "Vastuun rajoitus",
+        "content1": "LAIN SALLIMASSA LAAJUUDESSA ALFA AUTOMATIONS EI OLE VASTUUSSA MISTÄÄN VÄLILLISISTÄ, SATUNNAISISTA, ERITYISISTÄ, SEURANNAISISTA TAI RANKAISEVISTA VAHINGOISTA, MUKAAN LUKIEN MUTTA EI RAJOITTUEN VOITTOJEN, TIETOJEN TAI KÄYTÖN MENETYKSIIN, JOTKA JOHTUVAT NÄISTÄ EHDOISTA TAI PALVELUISTA.",
+        "content2": "KOKONAISVASTUUMME SINULLE KAIKISTA NÄISTÄ EHDOISTA TAI PALVELUISTA JOHTUVISTA VAATIMUKSISTA EI SAA YLITTÄÄ SUMMAA, JONKA OLET MAKSANUT MEILLE KAHDENTOISTA KUUKAUDEN AIKANA ENNEN VAATIMUSTA."
+      },
+      "termination": {
+        "title": "Irtisanominen",
+        "content1": "Voit irtisanoa tilisi milloin tahansa noudattamalla tiliasetustesi ohjeita. Voimme irtisanoa tai keskeyttää tilisi, jos rikot näitä ehtoja tai mistä tahansa muusta syystä ilmoituksella tai ilman.",
+        "content2": "Irtisanomisen jälkeen oikeutesi käyttää palveluja lakkaa välittömästi. Voimme poistaa tilisi ja tietosi, mutta emme ole velvollisia tekemään niin."
+      },
+      "changes": {
+        "title": "Ehtojen muutokset",
+        "content1": "Voimme muuttaa näitä ehtoja milloin tahansa. Ilmoitamme olennaisista muutoksista julkaisemalla päivitetyt ehdot verkkosivustollamme ja päivittämäll�� \"Viimeksi päivitetty\" -päivämäärän. Palvelujen käytön jatkaminen tällaisten muutosten jälkeen merkitsee uusien ehtojen hyväksymistä."
+      }
+    }
+  },
+  "privacy": {
+    "badge": "Tietosuoja",
+    "title": "Tietosuoja",
+    "titleHighlight": "käytäntö",
+    "subtitle": "Opi kuinka Alfa Automations kerää, käyttää ja suojaa henkilötietojasi käyttäessäsi tekoälyautomaatioalusta-palvelujamme.",
+    "lastUpdated": "Viimeksi päivitetty: 1. tammikuuta 2025",
+    "version": "Versio 2.1",
+    "introduction": {
+      "title": "Johdanto",
+      "content": "Alfa Automations (\"Alfa Automations\", \"me\", \"meidän\" tai \"meidät\"), on sitoutunut suojaamaan yksityisyyttäsi. Tämä tietosuojakäytäntö selittää, kuinka keräämme, käytämme, säilytämme ja suojaamme henkilötietoja, kun käytät palvelujamme – mukaan lukien vuorovaikutus tekoälyautomaatioalustamme kanssa, yhteydenotto sähköpostitse tai integraatioiden käyttö kolmannen osapuolen palvelujen kanssa."
+    },
+    "sections": {
+      "dataCollection": {
+        "title": "Keräämämme tiedot",
+        "intro": "Keräämme vain henkilötietoja, jotka ovat tarpeellisia tässä käytännössä kuvattuihin tarkoituksiin, ja teemme sen asianmukaisella ilmoituksella tai suostumuksella. Kerättäviä tietotyyppejä voivat olla:",
+        "directInfo": {
+          "title": "Suoraan antamasi tiedot",
+          "subtitle": "Kun olet vuorovaikutuksessa tekoälyautomaatioalustamme tai muiden kanavien kanssa, saatat antaa henkilötietoja, kuten:",
+          "items": [
+            "Nimi, sähköpostiosoite, puhelinnumero",
+            "Yritystiedot ja ammattinimike",
+            "Viestintäasetukset",
+            "Viestien ja vuorovaikutusten sisältö",
+            "Tukipyynnöt ja palautteet"
+          ]
+        },
+        "accountInfo": {
+          "title": "Tili- ja profiilitiedot",
+          "subtitle": "Jos palvelumme vaativat rekisteröitymistä tai integrointia Google-tilin kautta:",
+          "items": [
+            "Nimi, käyttäjänimi, sähköpostiosoite",
+            "Telegram-tunnus tai käyttäjänimi (annettu Telegram-alustan kautta)",
+            "Palveluntarjoamisen edellyttämät profiilitiedot"
+          ]
+        },
+        "integrationData": {
+          "title": "Integraatiotiedot",
+          "subtitle": "Kun integroit kolmannen osapuolen alustojen kanssa (Google-palvelut, HubSpot, Trello jne.):",
+          "items": [
+            "Kalenteritapahtumien tiedot (jos integroitu Google Kalenterin kanssa)",
+            "Yhteystiedot ja tehtävätiedot (CRM/projektityökaluille)",
+            "Järjestelmäpäivityksiin ja automaatioon tarvittavat tiedot"
+          ]
+        },
+        "usageData": {
+          "title": "Käyttötiedot ja lokit",
+          "items": [
+            "Laite/selaintyyppi, käyttöajat, IP-osoite",
+            "Vuorovaikutuslokit (chatbot-vuorovaikutusten päivämäärä/aika)",
+            "Virhelokit ja suorituskyvyn mittarit",
+            "Järjestelmän valvontatiedot ylläpitoa ja turvallisuutta varten"
+          ]
+        }
+      },
+      "processingPurpose": {
+        "title": "Käsittelyn tarkoitus ja oikeusperuste",
+        "intro": "Käytämme kerättyjä henkilötietoja erityisiin tarkoituksiin ja vain silloin, kun meillä on GDPR:n mukainen oikeusperuste:",
+        "serviceProvision": {
+          "title": "Palvelujen tarjoaminen ja parantaminen",
+          "legalBasis": "Oikeusperuste: Sopimuksen täyttäminen, oikeutetut edut",
+          "items": [
+            "Telegram-bottien ja niihin liittyvien palvelujen operointi",
+            "Vastaaminen kyselyihin ja pyydettyjen tehtävien suorittaminen",
+            "Asianmukaisten vastausten luominen ja automaattisten toimintojen suorittaminen",
+            "Käyttömallien analysointi palvelujemme parantamiseksi",
+            "Tukiliippujen luominen tai tietueiden päivittäminen pyynnöstäsi"
+          ]
+        },
+        "communications": {
+          "title": "Viestintä ja tuki",
+          "legalBasis": "Oikeusperuste: Oikeutettu etu, sopimuksen täyttäminen",
+          "items": [
+            "Vastaaminen asiakastukipyyntöihin",
+            "Palveluun liittyvien ilmoitusten ja päivitysten lähettäminen",
+            "Ilmoittaminen palvelujen tai käytäntöjen muutoksista",
+            "Asiakastyytyväisyyden tarjoaminen ja käyttäjätarpeiden huomioiminen"
+          ]
+        },
+        "integrations": {
+          "title": "Integraatiot ja automatisoidut toiminnot",
+          "legalBasis": "Oikeusperuste: Sopimuksen täyttäminen",
+          "items": [
+            "Tietojen siirtäminen kolmannen osapuolen järjestelmiin/järjestelmistä pyynnön mukaan",
+            "Kontaktien luominen CRM:ään tai korttien luominen projektinhallintatyökaluihin",
+            "Tietojen käsittely valtuutettujen integraatioiden kautta",
+            "Sinun tai asiakkaidemme pyytämän toiminnallisuuden toteuttaminen"
+          ]
+        },
+        "compliance": {
+          "title": "Vaatimustenmukaisuus ja lailliset velvoitteet",
+          "legalBasis": "Oikeusperuste: Lakisääteinen velvoite, oikeutettu etu",
+          "items": [
+            "Lakisääteisten velvoitteiden ja raportointivaatimusten noudattaminen",
+            "Vastaaminen lainvalvontapyyntöihin",
+            "Kirjanpitotarkoituksiin tarkoitettujen tietueiden pitäminen",
+            "Oikeusvaatimusten harjoittaminen tai puolustaminen"
+          ]
+        },
+        "security": {
+          "title": "Turvallisuus ja petosten ehkäisy",
+          "legalBasis": "Oikeusperuste: Oikeutettu etu",
+          "items": [
+            "Palvelujemme turvallisuuden valvonta ja varmistaminen",
+            "Väärinkäytön, petosten tai luvattoman pääsyn ehkäisy",
+            "Teknisten ongelmien havaitseminen ja käsittely",
+            "Lokien analysointi epäilyttävän toiminnan havaitsemiseksi"
+          ]
+        }
+      },
+      "dataSharing": {
+        "title": "Tietojen jakaminen ja kolmannen osapuolen integraatiot",
+        "intro": "Kohtelemme henkilötietojasi huolellisesti emmekä myy tai vuokraa tietojasi kolmansille osapuolille heidän omiin markkinointitarkoituksiinsa. Voimme kuitenkin jakaa henkilötietoja seuraavissa olosuhteissa:",
+        "serviceProviders": {
+          "title": "Palveluntarjoajat ja kumppanit",
+          "subtitle": "Käytämme luotettuja kolmannen osapuolen palveluntarjoajia liiketoimintamme pyörittämisessä:",
+          "items": [
+            "Pilvi-infrastruktuuri: MongoDB Atlas ja Hetzner Online -palvelimet turvallista hostingia varten",
+            "Automaatiotyökalut: n8n työnkulun automaatioalusta järjestelmäyhteyksille",
+            "Kolmannen osapuolen API:t: HubSpot (CRM), Trello (projektinhallinta), Google-palvelut",
+            "Analytiikka ja valvonta: Virheiden seuranta ja suorituskyvyn valvontapalvelut"
+          ]
+        },
+        "businessClients": {
+          "title": "Liikeasiakkaat (rekisterinpitäjät)",
+          "subtitle": "Kun tarjoamme chatbot-palveluja liikeasiakkaille, he voivat olla ensisijaisia rekisterinpitäjiä:",
+          "items": [
+            "Toimimme tietojenkäsittelijänä asiakkaan puolesta",
+            "Käsittelemme tietoja vain asiakkaan ohjeiden mukaan",
+            "Asiakkaat ovat vastuussa tarvittavan suostumuksen hankkimisesta loppukäyttäjiltä",
+            "Varmistamme GDPR-vaatimustenmukaisuuden tietojenkäsittelysopimusten kautta"
+          ]
+        },
+        "legalRequirements": {
+          "title": "Lailliset vaatimukset ja suojelu",
+          "subtitle": "Voimme paljastaa henkilötietoja, jos uskomme sen olevan tarpeellista:",
+          "items": [
+            "Lakisääteisten velvoitteiden ja voimassa olevien oikeudellisten prosessien noudattamiseksi",
+            "Vastaamiseksi viranomaispyyntöihin",
+            "Suojataksemme Alfaliiken, käyttäjien tai yleisön oikeuksia, omaisuutta tai turvallisuutta",
+            "Ehkäistäksemme tai tutkataksemme väärinkäytöksiä, petoksia tai turvallisuusincidenttejä"
+          ]
+        },
+        "corporateTransactions": {
+          "title": "Yritysjärjestelyt",
+          "content": "Jos Alfaliike on mukana fuusiossa, hankinnassa tai omaisuuden myynnissä, henkilötietosi voidaan siirtää. Varmistamme, että luottamuksellisuus säilyy ja annamme ilmoituksen ennen kuin tiedot tulevat eri tietosuojakäytännön piiriin."
+        }
+      },
+      "dataStorage": {
+        "title": "Tietojen säilytys ja kansainväliset siirrot",
+        "storageLocations": {
+          "title": "Säilytyssijainnit",
+          "intro": "Henkilötietosi säilytetään turvallisilla palvelimilla ja tietokannoissa Euroopan unionin alueella:",
+          "items": [
+            "MongoDB Atlas pilvipalvelutietokanta (EU-datakeskukset)",
+            "Hetzner Online -sovelluspalvelimet (Saksa/Suomi)",
+            "Korkean tason salaus ja turvallisuusvalvonta",
+            "Tietojen sijaintivaihtoehdot asiakasvaatimusten mukaan"
+          ]
+        },
+        "internationalTransfers": {
+          "title": "Kansainväliset siirrot",
+          "intro": "Kun henkilötietoja siirretään ETA-alueen ulkopuolelle, varmistamme asianmukaiset suojatoimet:",
+          "items": [
+            "Vakiosopimuslausekkeet (SCC): EU:n hyväksymät tietosuojalausekkeet",
+            "Tietojenkäsittelylisäykset: GDPR-vaatimustenmukaisuussitoumukset",
+            "Tekniset toimenpiteet: Salaus siirrossa ja levossa (TLS/SSL)",
+            "Alueellistaminen: Tietojen käsittely käyttäjiä lähimpänä olevalla alueella",
+            "Pääsynvalvonta: Verkkosuojaukset ja valtuutusjärjestelmät"
+          ]
+        },
+        "note": "Huomaa: Telegram Messenger Inc. ja muut kolmannen osapuolen palvelut käsittelevät tietoja omien tietosuojakäytäntöjensä mukaan itsenäisinä toimijoina. Teemme yhteistyötä vain hyvämaineisten, tietosuojaa noudattavien palvelujen kanssa."
+      },
+      "dataSecurity": {
+        "title": "Tietojen turvallisuus",
+        "intro": "Suhtaudumme tietojen turvallisuuteen erittäin vakavasti ja käytämme erilaisia teknisiä ja organisatorisia toimenpiteitä henkilötietojesi suojaamiseksi:",
+        "technicalMeasures": {
+          "title": "Tekniset turvatoimet",
+          "items": [
+            "Salaus: TLS/SSL siirrossa olevalle datalle, salatut tietokannat levossa",
+            "Verkkoturvallisuus: Palomuurit, turvalliset verkkoarkkitehtuurit, VPN-pääsy",
+            "Pääsynvalvonta (RBAC): Tietämisen tarve -periaate, monitekijätodennus",
+            "Valvonta: Jatkuva järjestelmävalvonta, turvallisuushälytykset, auditointilokit",
+            "Turvallinen infrastruktuuri: 24/7 valvotut datakeskukset fyysisellä turvallisuudella"
+          ]
+        },
+        "organizationalMeasures": {
+          "title": "Organisatoriset toimenpiteet",
+          "items": [
+            "Henkilöstön salassapitosopimukset ja tietosuojakoulutus",
+            "Yksityisyys suunnittelun mukaan ja turvallisuus suunnittelun mukaan -lähestymistavat",
+            "Säännölliset turvallisuustestit, haavoittuvuusskannaukset, koodikatselmoinnit",
+            "Tapaustenhallintaluonnos tietoturvaloukkauksien ilmoitusproseduurien kanssa"
+          ]
+        },
+        "disclaimer": {
+          "title": "Turvallisuusvastuuvapauslauseke",
+          "content": "Vaikka toteutamme alan standardien mukaisia turvatoimia, mikään internetin kautta tapahtuva tiedonsiirtomenetelmä ei ole 100% turvallinen. Lähetät tietoja meille omalla vastuullasi ja sinun tulisi käyttää turvallisia verkkoja ja laitteita."
+        }
+      },
+      "dataRetention": {
+        "title": "Tietojen säilytys",
+        "intro": "Säilytämme henkilötietoja vain niin kauan kuin on tarpeen tässä käytännössä kuvattujen tarkoitusten täyttämiseksi, ellei laki vaadi tai salli pidempää säilytysaikaa:",
+        "chatData": {
+          "title": "Chat-tiedot",
+          "items": [
+            "Keskustelulokit säilytetään niin kauan kuin palvelun tarjoaminen vaatii",
+            "Säilytetään laadunvarmistusta ja botin parantamista varten (anonymisoinnin jälkeen)",
+            "Poistetaan tai anonymisoidaan kohtuullisen ajan kuluttua, kun niitä ei enää aktiivisesti tarvita"
+          ]
+        },
+        "integrationData": {
+          "title": "Integraatiotiedot",
+          "items": [
+            "Kolmannen osapuolen järjestelmien tietueet näiden järjestelmien säilytuskäytäntöjen alaisia",
+            "Sisäisiä synkronointitietoja käsitellään kuten chat-tietoja",
+            "Säilytetään vain integraatiotoiminnon vaatimassa määrin"
+          ]
+        },
+        "accountData": {
+          "title": "Tili-/yhteystiedot",
+          "items": [
+            "Säilytetään niin kauan kuin jatkamme vuorovaikutusta kanssasi tai tarjoamme palveluja",
+            "Poistetaan tai anonymisoidaan suostumuksen peruuttamisen tai palvelun lopettamisen yhteydessä",
+            "Perustiedot säilytetään hallinnollisia tarkoituksia varten tarpeen mukaan"
+          ]
+        },
+        "logsBackups": {
+          "title": "Lokit ja varmuuskopiot",
+          "items": [
+            "Järjestelmälokit säilytetään tyypillisesti 30-90 päivää",
+            "Varmuuskopioiden tilannevedoksia hallitaan vanhenemiskäytäntöjen mukaan",
+            "Pidennetty säilytys vain jos turvallisuusincidentit tai lailliset vaatimukset perustelevat"
+          ]
+        },
+        "note": "Kun meillä ei ole jatkuvaa laillista liiketoimintatarvetta, poistamme, anonymisoimme tai eristämme tietosi turvallisesti. Varmuuskopiojärjestelmien jäännöskappaleet poistetaan varmuuskopiointien säilytysaikataulun mukaan."
+      },
+      "yourRights": {
+        "title": "Oikeutesi",
+        "intro": "Henkilönä, jonka henkilötietoja käsittelemme, erityisesti jos olet EU:ssa, sinulla on tiettyjä tietosuojaoikeuksia GDPR:n mukaan:",
+        "accessInfo": {
+          "title": "Pääsy ja tiedot",
+          "items": [
+            "Pääsyoikeus: Pyydä vahvistusta ja kopiota henkilötiedoistasi",
+            "Tiedot: Ymmärrä kuinka käytämme tietojasi ja varmista laillisuus"
+          ]
+        },
+        "correction": {
+          "title": "Korjaus ja päivitykset",
+          "items": [
+            "Oikaisemistoikeus: Korjaa epätarkat tai puutteelliset tiedot",
+            "Päivitykset: Pidä sähköposti-, yhteys- ja profiilitietosi ajan tasalla"
+          ]
+        },
+        "deletion": {
+          "title": "Poistaminen ja rajoitus",
+          "items": [
+            "Poistamisoikeus: \"Oikeus tulla unohdetuksi\" kun tietoja ei enää tarvita",
+            "Käsittelyn rajoittamisoikeus: Keskeytä käsittely väliaikaisesti tietyissä olosuhteissa",
+            "Vastustamisoikeudet: Vastusta oikeutettuihin etuihin perustuvaa käsittelyä"
+          ]
+        },
+        "portability": {
+          "title": "Siirrettävyys ja suostumus",
+          "items": [
+            "Tietojen siirrettävyys: Vastaanota tietosi koneluettavassa muodossa",
+            "Suostumuksen peruuttaminen: Lopeta suostumukseen perustuva käsittely milloin tahansa",
+            "Markkinoinnin kieltäminen: Ehdoton oikeus lopettaa suoramarkkinointi"
+          ]
+        },
+        "complaints": {
+          "title": "Valitukset ja tuki",
+          "items": [
+            "Valvontaviranomainen: Tee valituksia tietosuojaviranomaisille",
+            "Suomi: Tietosuojavaltuutetun toimisto",
+            "Vasteaika: Vastaamme oikeuspyyntöihin kuukauden kuluessa"
+          ]
+        },
+        "note": "Käyttääksesi oikeuksiasi, ota meihin yhteyttä alla olevien tietojen avulla. Saatamme joutua varmistamaan henkilöllisyytesi käsitelläksemme tiettyjä pyyntöjä. Oikeuksiesi käyttäminen on maksutonta, paitsi perusteettomien tai liiallisten pyyntöjen tapauksessa."
+      },
+      "childrensPrivacy": {
+        "title": "Lasten yksityisyys",
+        "content1": "Palvelumme (mukaan lukien Telegram-bottimme ja integraatiomme) eivät ole suunnattu alle 16-vuotiaille lapsille. Emme tietoisesti kerää henkilötietoja keneltäkään alle 16-vuotiaalta.",
+        "content2": "Jos olet alle 16-vuotias, älä käytä palvelujamme tai anna henkilötietoja. Jos saamme tietää, että olemme tahattomasti keränneet henkilötietoja alle 16-vuotiaalta lapselta ilman asianmukaista suostumusta, ryhdymme toimiin tietojen poistamiseksi mahdollisimman pian.",
+        "content3": "Jos olet vanhempi tai huoltaja ja huomaat, että alle 16-vuotias lapsesi on ollut tekemisissä palvelujemme kanssa ja antanut henkilötietoja, ota meihin yhteyttä välittömästi, ja poistamme lapsen tiedot tietueistamme viipymättä.",
+        "noteTitle": "Huomaa:",
+        "noteContent": "Suomessa tietoyhteiskuntapalvelujen suostumusiäksi on asetettu 13 vuotta suostumukseen perustuvalle käsittelylle. Käytäntömme on kuitenkin välttää palvelujen tarjoamista alaikäisille kokonaan, kun otetaan huomioon bottiemme liiketoimintasuuntautunut luonne. Käyttämällä palvelujamme vakuutat olevasi vähintään 16-vuotias."
+      },
+      "policyUpdates": {
+        "title": "Käytännön päivitykset",
+        "intro": "Voimme päivittää tätä tietosuojakäytäntöä ajoittain heijastaaksemme käytäntöjemme, teknologioiden, lakisääteisten vaatimusten tai muiden toiminnallisten syiden muutoksia.",
+        "notificationMethods": {
+          "title": "Ilmoitusmenetelmät",
+          "items": [
+            "\"Voimaantulopäivämäärän\" tarkistaminen käytännön yläosassa",
+            "Ilmoitusten julkaiseminen verkkosivustollamme merkittävistä muutoksista",
+            "Käyttäjien ilmoittaminen botin tai sähköpostin kautta olennaisista muutoksista",
+            "Näkyvän ilmoituksen antaminen lain vaatimalla tavalla"
+          ]
+        },
+        "consent": {
+          "title": "Suostumuksesi",
+          "content": "Palvelujemme jatkuva käyttö tämän käytännön muutosten jälkeen merkitsee päivitettyjen ehtojen hyväksymistä. Kannustamme sinua tarkistamaan tämän käytännön säännöllisesti pysyäksesi ajan tasalla siitä, kuinka suojaamme tietojasi."
+        },
+        "newPurpose": "Jos pyrimme käyttämään henkilötietojasi uuteen tarkoitukseen, joka ei ole yhteensopiva niiden tarkoitusten kanssa, joihin alun perin keräsimme ne, hankkimme suostumuksesi tai annamme sinulle asiaankuuluvan ilmoituksen lain vaatimalla tavalla."
+      }
+    }
+  },
+  "cookies": {
+    "badge": "Verkkosivujen evästeet",
+    "title": "Eväste",
+    "titleHighlight": "käytäntö",
+    "subtitle": "Opi kuinka Alfa Automations käyttää evästeitä ja vastaavia teknologioita parantaakseen käyttökokemustasi ja tekoälyautomaatioalustaamme.",
+    "lastUpdated": "Viimeksi päivitetty: 1. tammikuuta 2025",
+    "version": "Versio 2.1",
+    "notice": {
+      "title": "Evästeilmoitus",
+      "content": "Tämä evästekäytäntö selittää, kuinka Alfa Automations ja kumppanimme käyttävät evästeitä ja vastaavia teknologioita, kun vierailet verkkosivustollamme tai käytät palvelujamme. Olemme sitoutuneet läpinäkyvyyteen siitä, kuinka keräämme ja käytämme tietojasi."
+    },
+    "sections": {
+      "whatAreCookies": {
+        "title": "Mitä evästeet ovat?",
+        "content": "Evästeet ovat pieniä tekstitiedostoja, jotka tallennetaan laitteellesi, kun vierailet verkkosivustolla. Niitä käytetään laajasti verkkosivustojen tehokkaampaan toimintaan, tietojen antamiseen verkkosivustojen omistajille ja käyttökokemuksen parantamiseen.",
+        "types": {
+          "session": {
+            "title": "Istuntoevästeet",
+            "description": "Väliaikaiset evästeet, jotka vanhenevat kun suljet selaimesi"
+          },
+          "persistent": {
+            "title": "Pysyvät evästeet",
+            "description": "Evästeet, jotka pysyvät laitteellasi määrätyn ajan tai kunnes ne poistetaan manuaalisesti"
+          },
+          "firstParty": {
+            "title": "Ensimmäisen osapuolen evästeet",
+            "description": "Alfa Automationsin suoraan asettamat evästeet"
+          },
+          "thirdParty": {
+            "title": "Kolmannen osapuolen evästeet",
+            "description": "Käyttämiemme ulkoisten palvelujen asettamat evästeet"
+          }
+        }
+      },
+      "cookieTypes": {
+        "title": "Käyttämämme evästetyypit",
+        "essential": {
+          "title": "Välttämättömät evästeet",
+          "required": "Vaaditaan",
+          "description": "Nämä evästeet ovat tarpeen verkkosivuston toiminnalle, eikä niitä voida poistaa käytöstä. Ne mahdollistavat perustoiminnot kuten turvallisuuden, verkonhallinnan ja saavutettavuuden.",
+          "examples": [
+            "Todennus ja istunnon hallinta",
+            "Turvallisuus ja petosten ehkäisy",
+            "Kuormituksen tasapainotus ja suorituskyky",
+            "Evästeiden suostumusasetukset"
+          ]
+        },
+        "performance": {
+          "title": "Suorituskykyevästeet",
+          "optional": "Valinnainen",
+          "description": "Nämä evästeet auttavat meitä ymmärtämään, kuinka vierailijat ovat vuorovaikutuksessa verkkosivustomme kanssa keräämällä anonyymiä tietoa käyttömalleista.",
+          "examples": [
+            "Google Analytics (liikenne-analyysi)",
+            "Sivun latausajat ja suorituskyvyn mittarit",
+            "Virheiden seuranta ja virheenkorjaus",
+            "Ominaisuuksien käyttötilastot"
+          ]
+        },
+        "functional": {
+          "title": "Toiminnalliset evästeet",
+          "optional": "Valinnainen",
+          "description": "Nämä evästeet mahdollistavat parannetun toiminnallisuuden ja personoinnin, kuten asetustesi ja asetusten muistamisen.",
+          "examples": [
+            "Kieli- ja alueasetukset",
+            "Teema- ja käyttöliittymän mukautukset",
+            "Hallintapaneelin asettelun asetukset",
+            "Ilmoitusasetukset"
+          ]
+        },
+        "marketing": {
+          "title": "Markkinointievästeet",
+          "optional": "Valinnainen",
+          "description": "Nämä evästeet seuraavat verkkoaktiviteettiasi auttaakseen mainostajia toimittamaan osuvampaa mainontaa tai rajoittamaan kuinka monta kertaa näet mainoksen.",
+          "examples": [
+            "Sosiaalisen median integraatio (LinkedIn, Twitter)",
+            "Markkinointikampanjoiden tehokkuus",
+            "Uudelleenkohdistus ja uudelleenmarkkinointi",
+            "Sisältösuosituskoneet"
+          ]
+        }
+      },
+      "thirdPartyServices": {
+        "title": "Kolmannen osapuolen palvelut",
+        "intro": "Käytämme luotettuja kolmannen osapuolen palveluja, jotka voivat asettaa omia evästeitä. Nämä palvelut auttavat meitä tarjoamaan ja parantamaan alustaamme:",
+        "services": {
+          "googleAnalytics": {
+            "title": "Google Analytics",
+            "description": "Verkkoanalytiikka ja käyttöoivallukset"
+          },
+          "stripe": {
+            "title": "Stripe",
+            "description": "Maksujen käsittely ja petosten ehkäisy"
+          },
+          "intercom": {
+            "title": "Intercom",
+            "description": "Asiakastuki ja viestintä"
+          },
+          "linkedinInsight": {
+            "title": "LinkedIn Insight",
+            "description": "Ammatillisen yleisön analytiikka"
+          }
+        }
+      },
+      "managingCookies": {
+        "title": "Evästeasetustesi hallinta",
+        "intro": "Sinulla on hallinta laitteellesi asetettavista evästeistä. Näin voit hallita niitä:",
+        "methods": {
+          "consentBanner": {
+            "title": "Evästeiden suostumuspalkki",
+            "description": "Kun vierailet ensimmäistä kertaa verkkosivustollamme, voit valita mitä evästetyyppejä hyväksyt suostumuspalkimme kautta."
+          },
+          "accountSettings": {
+            "title": "Tiliasetukset",
+            "description": "Rekisteröityneet käyttäjät voivat hallita evästeasetuksia tiliasetusten Yksityisyys ja evästeet -osiossa."
+          },
+          "browserSettings": {
+            "title": "Selaimen asetukset",
+            "description": "Voit hallita evästeitä selaimen asetusten kautta. Huomaa, että välttämättömien evästeiden poistaminen käytöstä voi vaikuttaa verkkosivuston toiminnallisuuteen."
+          }
+        },
+        "importantNote": {
+          "title": "Tärkeä huomautus",
+          "content": "Tiettyjen evästeiden poistaminen käytöstä voi rajoittaa kykyäsi käyttää joitakin alustamme ominaisuuksia. Välttämättömiä evästeitä ei voida poistaa käytöstä, koska ne vaaditaan perustoiminnallisuuteen."
+        }
+      },
+      "cookieRetention": {
+        "title": "Evästeiden säilytys ja päivitykset",
+        "retentionPeriods": {
+          "title": "Säilytysajat",
+          "sessionCookies": "Istuntoevästeet: Kunnes selain suljetaan",
+          "authentication": "Todennus: 30 päivää",
+          "preferences": "Asetukset: 1 vuosi",
+          "analytics": "Analytiikka: 24 kuukautta"
+        },
+        "policyUpdates": {
+          "title": "Käytännön päivitykset",
+          "content": "Voimme päivittää tätä evästekäytäntöä ajoittain heijastaaksemme käytäntöjemme muutoksia tai lainmukaisuussyistä. Ilmoitamme olennaisista muutoksista verkkosivustomme tai sähköpostin kautta."
+        }
+      },
+      "contact": {
+        "title": "Ota yhteyttä",
+        "intro": "Jos sinulla on kysymyksiä tästä evästekäytännöstä tai siitä, kuinka käsittelemme evästeitä, ota yhteyttä:",
+        "privacyTeam": {
+          "title": "Tietosuojatiimi",
+          "email": "privacy@alfa-automations.com"
+        },
+        "dpo": {
+          "title": "Tietosuojavastaava",
+          "email": "dpo@alfa-automations.com"
+        },
+        "responseTime": "Pyrimme vastaamaan kaikkiin yksityisyyteen liittyviin kyselyihin 5 arkipäivän kuluessa."
+      },
+      "relatedPolicies": {
+        "title": "Liittyvät käytännöt",
+        "privacyPolicy": {
+          "title": "Tietosuojakäytäntö",
+          "description": "Kuinka käsittelemme tietojasi"
+        },
+        "termsOfService": {
+          "title": "Käyttöehdot",
+          "description": "Alustan käyttöehdot"
+        }
+      }
+    }
+  },
+  "helpCenter": {
+    "title": "Tukikeskus",
+    "subtitle": "Löydä vastauksia usein kysyttyihin kysymyksiin ja saa tarvitsemasi tuki",
+    "categories": {
+      "gettingStarted": {
+        "title": "Aloittaminen",
+        "description": "Pikaopas ja asennustiedot",
+        "questions": [
+          {
+            "question": "Kuinka nopeasti pääsemme liikkeelle?",
+            "answer": "Toimiva prototyyppi jopa 48 h kartoituksen jälkeen. Nopea kehitysprosessimme mahdollistaa tulosten näkemisen nopeasti ja iteroimisen palautteesi perusteella."
+          },
+          {
+            "question": "Voimmeko yhdistää avustajatyyppejä?",
+            "answer": "Kyllä—Henkilökohtainen, Yritys ja Ryhmä. Alustamme tukee useita avustajatyyppejä, jotka voivat toimia saumattomasti yhdessä, mahdollistaen kattavan automaatioekosysteemin luomisen eri käyttötapauksiin ja käyttäjäryhmiin."
+          }
+        ]
+      },
+      "dataHosting": {
+        "title": "Data ja turvallisuus",
+        "description": "Tietoja datan tallennuksesta, turvallisuudesta ja vaatimustenmukaisuudesta",
+        "questions": [
+          {
+            "question": "Missä data sijaitsee?",
+            "answer": "EU:ssa (Hetzner). Käyttöoikeudet; lokit ja monitorointi päällä. Ylläpidämme tiukkoja käyttöoikeuksia kattavalla lokien seurannalla ja valvonnalla GDPR-säädösten noudattamiseksi."
+          }
+        ]
+      },
+      "communication": {
+        "title": "Viestintäkanavat",
+        "description": "Käytettävissä olevat viestintämenetelmät ja alustat",
+        "questions": [
+          {
+            "question": "Tarvitaanko Telegramia?",
+            "answer": "Paras nopeaan pilottiin; myös web-widgetit/sähköpostilomakkeet onnistuvat. Telegram on optimaalinen nopeisiin pilotteihin ja reaaliaikaiseen viestintään, mutta se ei ole pakollinen."
+          }
+        ]
+      },
+      "integrations": {
+        "title": "Integraatiot",
+        "description": "Tuetut järjestelmät ja integrointimahdollisuudet",
+        "questions": [
+          {
+            "question": "Mihin järjestelmiin integroidutte?",
+            "answer": "Google (Sheets/Drive/Calendar), HubSpot, Trello, eBay-API:t, omat Webhookit/API:t, FastAPI. Integroimme laajaan valikoimaan järjestelmiä ja voimme kehittää räätälöityjä integraatioita tarpeidesi mukaan."
+          },
+          {
+            "question": "Voitteko integroida muita CRM-järjestelmiä?",
+            "answer": "Kyllä—räätälöity integraatio €199–€499 kertamaksu. Voimme kehittää räätälöityjä integraatioita useimmille CRM-järjestelmille tavallisten tarjontamme lisäksi. Hinta riippuu integraation monimutkaisuudesta ja erityisvaatimuksista."
+          }
+        ]
+      },
+      "support": {
+        "title": "Tuki ja SLA",
+        "description": "Tukivaihtoehdot ja palvelutasosopimukset",
+        "questions": [
+          {
+            "question": "Entä tuki ja SLA?",
+            "answer": "Suunnitelman mukaan; Enterprisessa laajennettu SLA. Enterprise-suunnitelmamme sisältää laajennetun SLA:n takaatuilla vastausajoilla, prioriteettituella ja omistetulla asiakashallinnoinnilla."
+          },
+          {
+            "question": "Voimmeko hostata itse?",
+            "answer": "Saatavilla Enterprise-tasossa. Itse hostaamisen vaihtoehdot sisältyvät Enterprise-suunnitelmaanmme, antaen sinulle täyden hallinnan infrastruktuuristasi ja datastasi säilyttäen samalla täyden alustan toiminnallisuuden."
+          }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Tarvitsetko vielä apua?",
+      "description": "Etkö löydä etsimääsi? Tukitiimimme on täällä auttamassa.",
+      "button": "Ota yhteyttä tukeen"
+    }
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "scrollToTop": "Siirry ylös",
+    "back": "Takaisin"
+  }
+}

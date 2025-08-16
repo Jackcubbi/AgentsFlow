@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -26,29 +28,57 @@ import {
   Target,
   RefreshCw,
 } from "lucide-react";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import AuthModals from "@/components/auth/AuthModals";
 
 const CookiePolicy = () => {
+  const { t } = useTranslation();
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [registerOpen, setRegisterOpen] = useState(false);
+
+  // Helper function to safely get translation arrays
+  const getTranslationArray = (key: string): string[] => {
+    const result = t(key, { returnObjects: true });
+    return Array.isArray(result) ? result : [];
+  };
+
+  // Helper function to safely split and extract retention period values
+  const getRetentionValue = (key: string): string => {
+    const translation = t(key);
+    if (typeof translation === 'string' && translation.includes(':')) {
+      const parts = translation.split(':');
+      return parts.length > 1 ? parts[1].trim() : translation;
+    }
+    return translation || '';
+  };
+
+  // Helper function to safely extract retention period labels
+  const getRetentionLabel = (key: string): string => {
+    const translation = t(key);
+    if (typeof translation === 'string' && translation.includes(':')) {
+      const parts = translation.split(':');
+      return parts[0];
+    }
+    return translation || '';
+  };
+
+  const openLoginModal = () => {
+    setLoginOpen(true);
+  };
+
+  const openRegisterModal = () => {
+    setRegisterOpen(true);
+  };
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container flex h-16 items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-600">
-              <Bot className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              AgentFlow
-            </span>
-          </Link>
-          <Link to="/">
-            <Button variant="ghost" className="flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-        </div>
-      </nav>
+      <Header
+        variant="default"
+        showLanguageToggle={false}
+        showAuthButtons={true}
+        onLoginClick={openLoginModal}
+      />
 
       {/* Header */}
       <section className="py-16 bg-gradient-to-br from-primary/5 via-background to-purple-500/5">
@@ -56,27 +86,26 @@ const CookiePolicy = () => {
           <div className="max-w-4xl mx-auto text-center space-y-6">
             <Badge variant="outline" className="border-primary/20">
               <Cookie className="w-3 h-3 mr-1" />
-              Website Cookies
+              {t('cookies.badge')}
             </Badge>
             <h1 className="text-4xl md:text-5xl font-bold">
-              Cookie
+              {t('cookies.title')}
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
                 {" "}
-                Policy
+                {t('cookies.titleHighlight')}
               </span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Learn about how AgentFlow uses cookies and similar technologies to
-              enhance your experience and improve our AI automation platform.
+              {t('cookies.subtitle')}
             </p>
             <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
-                <span>Last updated: January 1, 2025</span>
+                <span>{t('cookies.lastUpdated')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <FileText className="h-4 w-4" />
-                <span>Version 1.0</span>
+                <span>{t('cookies.version')}</span>
               </div>
             </div>
           </div>
@@ -94,13 +123,10 @@ const CookiePolicy = () => {
                   <Cookie className="h-5 w-5 text-blue-600 mt-0.5" />
                   <div>
                     <h3 className="font-semibold text-blue-800 mb-2">
-                      Cookie Notice
+                      {t('cookies.notice.title')}
                     </h3>
                     <p className="text-blue-700 text-sm leading-relaxed">
-                      This Cookie Policy explains how AgentFlow and our partners
-                      use cookies and similar technologies when you visit our
-                      website or use our services. We are committed to
-                      transparency about how we collect and use your data.
+                      {t('cookies.notice.content')}
                     </p>
                   </div>
                 </div>
@@ -112,52 +138,47 @@ const CookiePolicy = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Cookie className="h-5 w-5 text-primary" />
-                  1. What Are Cookies?
+                  1. {t('cookies.sections.whatAreCookies.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  Cookies are small text files that are placed on your device
-                  when you visit a website. They are widely used to make
-                  websites work more efficiently and provide a better user
-                  experience.
+                  {t('cookies.sections.whatAreCookies.content')}
                 </p>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5" />
                     <div>
-                      <p className="font-medium">Session Cookies</p>
+                      <p className="font-medium">{t('cookies.sections.whatAreCookies.types.session.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Temporary cookies that expire when you close your
-                        browser
+                        {t('cookies.sections.whatAreCookies.types.session.description')}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5" />
                     <div>
-                      <p className="font-medium">Persistent Cookies</p>
+                      <p className="font-medium">{t('cookies.sections.whatAreCookies.types.persistent.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Cookies that remain on your device for a set period or
-                        until manually deleted
+                        {t('cookies.sections.whatAreCookies.types.persistent.description')}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5" />
                     <div>
-                      <p className="font-medium">First-Party Cookies</p>
+                      <p className="font-medium">{t('cookies.sections.whatAreCookies.types.firstParty.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Set directly by AgentFlow
+                        {t('cookies.sections.whatAreCookies.types.firstParty.description')}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <CheckCircle className="h-4 w-4 text-green-600 mt-0.5" />
                     <div>
-                      <p className="font-medium">Third-Party Cookies</p>
+                      <p className="font-medium">{t('cookies.sections.whatAreCookies.types.thirdParty.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Set by external services we use
+                        {t('cookies.sections.whatAreCookies.types.thirdParty.description')}
                       </p>
                     </div>
                   </div>
@@ -170,7 +191,7 @@ const CookiePolicy = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Target className="h-5 w-5 text-primary" />
-                  2. Types of Cookies We Use
+                  2. {t('cookies.sections.cookieTypes.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-6">
@@ -179,22 +200,19 @@ const CookiePolicy = () => {
                   <div className="flex items-center gap-2">
                     <Shield className="h-4 w-4 text-red-600" />
                     <h4 className="font-semibold text-red-800">
-                      Essential Cookies
+                      {t('cookies.sections.cookieTypes.essential.title')}
                     </h4>
                     <Badge variant="destructive" className="text-xs">
-                      Required
+                      {t('cookies.sections.cookieTypes.essential.required')}
                     </Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    These cookies are necessary for the website to function and
-                    cannot be switched off. They enable core functionality such
-                    as security, network management, and accessibility.
+                    {t('cookies.sections.cookieTypes.essential.description')}
                   </p>
                   <div className="ml-6 space-y-2 text-sm text-muted-foreground">
-                    <p>• Authentication and session management</p>
-                    <p>• Security and fraud prevention</p>
-                    <p>• Load balancing and performance</p>
-                    <p>• Cookie consent preferences</p>
+                    {getTranslationArray('cookies.sections.cookieTypes.essential.examples').map((item: string, index: number) => (
+                      <p key={index}>• {item}</p>
+                    ))}
                   </div>
                 </div>
 
@@ -205,22 +223,19 @@ const CookiePolicy = () => {
                   <div className="flex items-center gap-2">
                     <BarChart className="h-4 w-4 text-blue-600" />
                     <h4 className="font-semibold text-blue-800">
-                      Performance Cookies
+                      {t('cookies.sections.cookieTypes.performance.title')}
                     </h4>
                     <Badge variant="secondary" className="text-xs">
-                      Optional
+                      {t('cookies.sections.cookieTypes.performance.optional')}
                     </Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    These cookies help us understand how visitors interact with
-                    our website by collecting anonymous information about usage
-                    patterns.
+                    {t('cookies.sections.cookieTypes.performance.description')}
                   </p>
                   <div className="ml-6 space-y-2 text-sm text-muted-foreground">
-                    <p>• Google Analytics (traffic analysis)</p>
-                    <p>• Page load times and performance metrics</p>
-                    <p>• Error tracking and debugging</p>
-                    <p>• Feature usage statistics</p>
+                    {getTranslationArray('cookies.sections.cookieTypes.performance.examples').map((item: string, index: number) => (
+                      <p key={index}>• {item}</p>
+                    ))}
                   </div>
                 </div>
 
@@ -231,22 +246,19 @@ const CookiePolicy = () => {
                   <div className="flex items-center gap-2">
                     <Settings className="h-4 w-4 text-green-600" />
                     <h4 className="font-semibold text-green-800">
-                      Functional Cookies
+                      {t('cookies.sections.cookieTypes.functional.title')}
                     </h4>
                     <Badge variant="secondary" className="text-xs">
-                      Optional
+                      {t('cookies.sections.cookieTypes.functional.optional')}
                     </Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    These cookies enable enhanced functionality and
-                    personalization, such as remembering your preferences and
-                    settings.
+                    {t('cookies.sections.cookieTypes.functional.description')}
                   </p>
                   <div className="ml-6 space-y-2 text-sm text-muted-foreground">
-                    <p>• Language and region preferences</p>
-                    <p>• Theme and UI customizations</p>
-                    <p>• Dashboard layout preferences</p>
-                    <p>• Notification settings</p>
+                    {getTranslationArray('cookies.sections.cookieTypes.functional.examples').map((item: string, index: number) => (
+                      <p key={index}>• {item}</p>
+                    ))}
                   </div>
                 </div>
 
@@ -257,22 +269,19 @@ const CookiePolicy = () => {
                   <div className="flex items-center gap-2">
                     <Eye className="h-4 w-4 text-purple-600" />
                     <h4 className="font-semibold text-purple-800">
-                      Marketing Cookies
+                      {t('cookies.sections.cookieTypes.marketing.title')}
                     </h4>
                     <Badge variant="secondary" className="text-xs">
-                      Optional
+                      {t('cookies.sections.cookieTypes.marketing.optional')}
                     </Badge>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    These cookies track your online activity to help advertisers
-                    deliver more relevant advertising or limit how many times
-                    you see an ad.
+                    {t('cookies.sections.cookieTypes.marketing.description')}
                   </p>
                   <div className="ml-6 space-y-2 text-sm text-muted-foreground">
-                    <p>• Social media integration (LinkedIn, Twitter)</p>
-                    <p>• Marketing campaign effectiveness</p>
-                    <p>• Retargeting and remarketing</p>
-                    <p>• Content recommendation engines</p>
+                    {getTranslationArray('cookies.sections.cookieTypes.marketing.examples').map((item: string, index: number) => (
+                      <p key={index}>• {item}</p>
+                    ))}
                   </div>
                 </div>
               </CardContent>
@@ -283,38 +292,36 @@ const CookiePolicy = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Globe className="h-5 w-5 text-primary" />
-                  3. Third-Party Services
+                  3. {t('cookies.sections.thirdPartyServices.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  We use trusted third-party services that may set their own
-                  cookies. These services help us provide and improve our
-                  platform:
+                  {t('cookies.sections.thirdPartyServices.intro')}
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="p-4 border rounded-lg">
-                    <h4 className="font-semibold mb-2">Google Analytics</h4>
+                    <h4 className="font-semibold mb-2">{t('cookies.sections.thirdPartyServices.services.googleAnalytics.title')}</h4>
                     <p className="text-sm text-muted-foreground">
-                      Web analytics and usage insights
+                      {t('cookies.sections.thirdPartyServices.services.googleAnalytics.description')}
                     </p>
                   </div>
                   <div className="p-4 border rounded-lg">
-                    <h4 className="font-semibold mb-2">Stripe</h4>
+                    <h4 className="font-semibold mb-2">{t('cookies.sections.thirdPartyServices.services.stripe.title')}</h4>
                     <p className="text-sm text-muted-foreground">
-                      Payment processing and fraud prevention
+                      {t('cookies.sections.thirdPartyServices.services.stripe.description')}
                     </p>
                   </div>
                   <div className="p-4 border rounded-lg">
-                    <h4 className="font-semibold mb-2">Intercom</h4>
+                    <h4 className="font-semibold mb-2">{t('cookies.sections.thirdPartyServices.services.intercom.title')}</h4>
                     <p className="text-sm text-muted-foreground">
-                      Customer support and messaging
+                      {t('cookies.sections.thirdPartyServices.services.intercom.description')}
                     </p>
                   </div>
                   <div className="p-4 border rounded-lg">
-                    <h4 className="font-semibold mb-2">LinkedIn Insight</h4>
+                    <h4 className="font-semibold mb-2">{t('cookies.sections.thirdPartyServices.services.linkedinInsight.title')}</h4>
                     <p className="text-sm text-muted-foreground">
-                      Professional audience analytics
+                      {t('cookies.sections.thirdPartyServices.services.linkedinInsight.description')}
                     </p>
                   </div>
                 </div>
@@ -326,47 +333,42 @@ const CookiePolicy = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Settings className="h-5 w-5 text-primary" />
-                  4. Managing Your Cookie Preferences
+                  4. {t('cookies.sections.managingCookies.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  You have control over the cookies set on your device. Here's
-                  how you can manage them:
+                  {t('cookies.sections.managingCookies.intro')}
                 </p>
 
                 <div className="space-y-4">
                   <div className="p-4 bg-muted/50 rounded-lg">
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <CheckCircle className="h-4 w-4 text-green-600" />
-                      Cookie Consent Banner
+                      {t('cookies.sections.managingCookies.methods.consentBanner.title')}
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      When you first visit our website, you can choose which
-                      types of cookies to accept through our consent banner.
+                      {t('cookies.sections.managingCookies.methods.consentBanner.description')}
                     </p>
                   </div>
 
                   <div className="p-4 bg-muted/50 rounded-lg">
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <Settings className="h-4 w-4 text-blue-600" />
-                      Account Settings
+                      {t('cookies.sections.managingCookies.methods.accountSettings.title')}
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      Registered users can manage cookie preferences in their
-                      account settings under Privacy & Cookies.
+                      {t('cookies.sections.managingCookies.methods.accountSettings.description')}
                     </p>
                   </div>
 
                   <div className="p-4 bg-muted/50 rounded-lg">
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <Globe className="h-4 w-4 text-purple-600" />
-                      Browser Settings
+                      {t('cookies.sections.managingCookies.methods.browserSettings.title')}
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      You can control cookies through your browser settings.
-                      Note that disabling essential cookies may affect website
-                      functionality.
+                      {t('cookies.sections.managingCookies.methods.browserSettings.description')}
                     </p>
                   </div>
                 </div>
@@ -377,13 +379,10 @@ const CookiePolicy = () => {
                       <AlertTriangle className="h-4 w-4 text-orange-600 mt-0.5" />
                       <div>
                         <h4 className="font-semibold text-orange-800 text-sm mb-1">
-                          Important Note
+                          {t('cookies.sections.managingCookies.importantNote.title')}
                         </h4>
                         <p className="text-orange-700 text-xs leading-relaxed">
-                          Disabling certain cookies may limit your ability to
-                          use some features of our platform. Essential cookies
-                          cannot be disabled as they are required for basic
-                          functionality.
+                          {t('cookies.sections.managingCookies.importantNote.content')}
                         </p>
                       </div>
                     </div>
@@ -397,50 +396,47 @@ const CookiePolicy = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <RefreshCw className="h-5 w-5 text-primary" />
-                  5. Cookie Retention and Updates
+                  5. {t('cookies.sections.cookieRetention.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-semibold mb-3">Retention Periods</h4>
+                    <h4 className="font-semibold mb-3">{t('cookies.sections.cookieRetention.retentionPeriods.title')}</h4>
                     <div className="space-y-2 text-sm">
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">
-                          Session cookies:
+                          {getRetentionLabel('cookies.sections.cookieRetention.retentionPeriods.sessionCookies')}:
                         </span>
                         <span className="font-medium">
-                          Until browser closes
+                          {getRetentionValue('cookies.sections.cookieRetention.retentionPeriods.sessionCookies')}
                         </span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">
-                          Authentication:
+                          {getRetentionLabel('cookies.sections.cookieRetention.retentionPeriods.authentication')}:
                         </span>
-                        <span className="font-medium">30 days</span>
+                        <span className="font-medium">{getRetentionValue('cookies.sections.cookieRetention.retentionPeriods.authentication')}</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">
-                          Preferences:
+                          {getRetentionLabel('cookies.sections.cookieRetention.retentionPeriods.preferences')}:
                         </span>
-                        <span className="font-medium">1 year</span>
+                        <span className="font-medium">{getRetentionValue('cookies.sections.cookieRetention.retentionPeriods.preferences')}</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">
-                          Analytics:
+                          {getRetentionLabel('cookies.sections.cookieRetention.retentionPeriods.analytics')}:
                         </span>
-                        <span className="font-medium">24 months</span>
+                        <span className="font-medium">{getRetentionValue('cookies.sections.cookieRetention.retentionPeriods.analytics')}</span>
                       </div>
                     </div>
                   </div>
 
                   <div>
-                    <h4 className="font-semibold mb-3">Policy Updates</h4>
+                    <h4 className="font-semibold mb-3">{t('cookies.sections.cookieRetention.policyUpdates.title')}</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      We may update this Cookie Policy periodically to reflect
-                      changes in our practices or for legal compliance. We will
-                      notify you of any material changes through our website or
-                      email.
+                      {t('cookies.sections.cookieRetention.policyUpdates.content')}
                     </p>
                   </div>
                 </div>
@@ -452,37 +448,35 @@ const CookiePolicy = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Mail className="h-5 w-5 text-primary" />
-                  6. Contact Us
+                  6. {t('cookies.sections.contact.title')}
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground leading-relaxed">
-                  If you have any questions about this Cookie Policy or how we
-                  handle cookies, please contact us:
+                  {t('cookies.sections.contact.intro')}
                 </p>
                 <div className="bg-muted/50 p-4 rounded-lg space-y-3">
                   <div className="flex items-center gap-3">
                     <Mail className="h-4 w-4 text-primary" />
                     <div>
-                      <p className="font-medium">Privacy Team</p>
+                      <p className="font-medium">{t('cookies.sections.contact.privacyTeam.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        privacy@agentflow.com
+                        {t('cookies.sections.contact.privacyTeam.email')}
                       </p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
                     <Bot className="h-4 w-4 text-primary" />
                     <div>
-                      <p className="font-medium">Data Protection Officer</p>
+                      <p className="font-medium">{t('cookies.sections.contact.dpo.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        dpo@agentflow.com
+                        {t('cookies.sections.contact.dpo.email')}
                       </p>
                     </div>
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  We aim to respond to all privacy-related inquiries within 5
-                  business days.
+                  {t('cookies.sections.contact.responseTime')}
                 </p>
               </CardContent>
             </Card>
@@ -490,7 +484,7 @@ const CookiePolicy = () => {
             {/* Related Policies */}
             <Card className="bg-gradient-to-br from-primary/5 to-purple-500/5 border-primary/20">
               <CardContent className="p-6">
-                <h3 className="font-semibold mb-4">Related Policies</h3>
+                <h3 className="font-semibold mb-4">{t('cookies.sections.relatedPolicies.title')}</h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <Link
                     to="/privacy-policy"
@@ -498,9 +492,9 @@ const CookiePolicy = () => {
                   >
                     <Shield className="h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Privacy Policy</p>
+                      <p className="font-medium">{t('cookies.sections.relatedPolicies.privacyPolicy.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        How we handle your data
+                        {t('cookies.sections.relatedPolicies.privacyPolicy.description')}
                       </p>
                     </div>
                   </Link>
@@ -510,9 +504,9 @@ const CookiePolicy = () => {
                   >
                     <FileText className="h-5 w-5 text-primary" />
                     <div>
-                      <p className="font-medium">Terms of Service</p>
+                      <p className="font-medium">{t('cookies.sections.relatedPolicies.termsOfService.title')}</p>
                       <p className="text-sm text-muted-foreground">
-                        Platform usage terms
+                        {t('cookies.sections.relatedPolicies.termsOfService.description')}
                       </p>
                     </div>
                   </Link>
@@ -522,6 +516,17 @@ const CookiePolicy = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* Authentication Modals */}
+      <AuthModals
+        loginOpen={loginOpen}
+        registerOpen={registerOpen}
+        onLoginOpenChange={setLoginOpen}
+        onRegisterOpenChange={setRegisterOpen}
+      />
     </div>
   );
 };

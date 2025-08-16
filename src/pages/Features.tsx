@@ -29,6 +29,8 @@ import {
   Database,
   Smartphone,
 } from "lucide-react";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const Features = () => {
   const [loginOpen, setLoginOpen] = useState(false);
@@ -37,49 +39,12 @@ const Features = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation */}
-      <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
-        <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-600">
-              <Bot className="h-5 w-5 text-white" />
-            </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              AgentFlow
-            </span>
-          </div>
-          <div className="hidden md:flex items-center space-x-6">
-            <a
-              href="/"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Home
-            </a>
-            <a href="/features" className="text-sm font-medium text-primary">
-              Features
-            </a>
-            <a
-              href="#pricing"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Pricing
-            </a>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setLoginOpen(true)}
-            >
-              Sign In
-            </Button>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-primary to-purple-600"
-              onClick={() => setRegisterOpen(true)}
-            >
-              Get Started
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <Header
+        variant="default"
+        showLanguageToggle={false}
+        showAuthButtons={true}
+        onLoginClick={() => setLoginOpen(true)}
+      />
 
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">

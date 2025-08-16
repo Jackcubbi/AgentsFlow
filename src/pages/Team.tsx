@@ -262,7 +262,7 @@ const Team = () => {
               <DialogHeader>
                 <DialogTitle>Invite Team Member</DialogTitle>
                 <DialogDescription>
-                  Send an invitation to join your AgentFlow team
+                  Send an invitation to join your Alfa Automations team
                 </DialogDescription>
               </DialogHeader>
               <div className="space-y-4 mt-4">

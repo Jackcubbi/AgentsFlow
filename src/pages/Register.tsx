@@ -89,7 +89,7 @@ const Register = () => {
       });
 
       if (success) {
-        toast.success("Welcome to AgentFlow! Your account has been created.");
+        toast.success("Welcome to Alfa Automations! Your account has been created.");
         navigate("/dashboard");
       } else {
         toast.error("Registration failed. Please try again.");
@@ -161,7 +161,7 @@ const Register = () => {
               <Bot className="h-8 w-8 text-white" />
             </div>
             <span className="text-3xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              AgentFlow
+              Alfa Automations
             </span>
           </Link>
 

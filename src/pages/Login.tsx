@@ -48,7 +48,7 @@ const Login = () => {
     try {
       const success = await login(email, password);
       if (success) {
-        toast.success("Welcome back to AgentFlow!");
+        toast.success("Welcome back to Alfa Automations!");
         navigate("/dashboard");
       } else {
         toast.error("Invalid email or password. Please try again.");
@@ -172,7 +172,7 @@ const Login = () => {
               <Bot className="h-8 w-8 text-white" />
             </div>
             <span className="text-3xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-              AgentFlow
+              Alfa Automations
             </span>
           </Link>
 
