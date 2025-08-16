@@ -18,6 +18,7 @@ import {
 const Index = () => {
   const { user, loading } = useAuth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [loginOpen, setLoginOpen] = useState(false);
   const [registerOpen, setRegisterOpen] = useState(false);
   const [showToTop, setShowToTop] = useState(false);
@@ -69,7 +70,7 @@ const Index = () => {
           <h2 className="text-xl font-semibold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
             AgentFlow
           </h2>
-          <p className="text-muted-foreground">Loading...</p>
+          <p className="text-muted-foreground">{t('common.loading')}</p>
         </div>
       </div>
     );
@@ -111,28 +112,28 @@ const Index = () => {
             </a>
             */}
             <Button variant="outline" size="sm" onClick={openLoginModal}>
-              Sign In
+              {t('header.signIn')}
             </Button>
             <Button
               size="sm"
               className="bg-gradient-to-r from-primary to-purple-600"
               onClick={openRegisterModal}
             >
-              Get Started
+              {t('header.getStarted')}
             </Button>
           </div>
 
           {/* Mobile Menu for Authentication */}
           <div className="md:hidden flex items-center space-x-2">
             <Button variant="outline" size="sm" onClick={openLoginModal}>
-              Sign In
+              {t('header.signIn')}
             </Button>
             <Button
               size="sm"
               className="bg-gradient-to-r from-primary to-purple-600"
               onClick={openRegisterModal}
             >
-              Get Started
+              {t('header.getStarted')}
             </Button>
           </div>
         </div>
@@ -151,7 +152,7 @@ const Index = () => {
               className="text-xs uppercase tracking-wider border-primary/30 bg-primary/5 text-primary font-mono"
             >
               <Bot className="w-3 h-3 mr-2" />
-              AI AUTOMATION PLATFORM
+              {t('hero.aiPlatform')}
             </Badge>
           </div>
 
@@ -160,16 +161,14 @@ const Index = () => {
             {/* Main Heading */}
             <div className="space-y-6">
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05]">
-                <div className="block">AI agents for</div>
+                <div className="block">{t('hero.title1')}</div>
                 <div className="block bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                  your business
+                  {t('hero.title2')}
                 </div>
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Deploy intelligent AI agents that handle customer support,
-                automate workflows, and scale your operations 24/7. The most
-                powerful platform for business automation.
+                {t('hero.subtitle')}
               </p>
             </div>
 
@@ -204,7 +203,7 @@ const Index = () => {
                     className="h-20 px-16 text-lg font-semibold bg-gradient-to-r from-amber-100 to-orange-100 hover:from-amber-200 hover:to-orange-200 text-gray-900 rounded-full shadow-2xl border-2 border-amber-200/50 transition-all duration-300 hover:scale-105"
                   >
                     <div className="flex items-center gap-4">
-                      <span>Try our AI Agent</span>
+                      <span>{t('hero.tryAgent')}</span>
                       <div className="relative">
                         <Mic className="h-6 w-6" />
                         <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-600 rounded-full animate-ping opacity-20"></div>
