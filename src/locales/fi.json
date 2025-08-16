@@ -1,0 +1,59 @@
+{
+  "header": {
+    "signIn": "Kirjaudu sisään",
+    "getStarted": "Aloita"
+  },
+  "hero": {
+    "aiPlatform": "TEKOÄLY AUTOMAATIOALUSTA",
+    "title1": "Tekoälyagentit",
+    "title2": "yrityksellesi",
+    "subtitle": "Ota käyttöön älykkäät tekoälyagentit, jotka hoitavat asiakastukea, automatisoivat työnkulkuja ja skaalautuvat toimintaasi 24/7. Tehokkain alusta liiketoiminnan automaatioon.",
+    "tryAgent": "Kokeile tekoälyagenttiamme"
+  },
+  "agents": {
+    "badge": "Tekoälyagentit",
+    "title": "Tutustu",
+    "titleHighlight": "tekoälyagentteihimme",
+    "subtitle": "Erikoistuneet tekoälyagentit valmiina hoitamaan monimutkaisimmat tehtäväsi. Valitse tarpeisiisi sopiva agentti.",
+    "tabs": {
+      "customerSupport": "Asiakastuki",
+      "salesAssistant": "Myyntiavustaja",
+      "dataAnalyst": "Data-analyytikko"
+    },
+    "customerSupport": {
+      "title": "Asiakastukiagentti",
+      "description": "Älykäs asiakastukiagenttimme hoitaa kyselyt 24/7, tarjoaa välittömät vastaukset yleisiin kysymyksiin, ohjaa monimutkaiset asiat ihmisagenteille ja ylläpitää täydellisen keskusteluhistorian. Koulutettu tietokantaasi varten tarkkaa, personoitua tukea varten.",
+      "chatNow": "Keskustele nyt"
+    },
+    "salesAssistant": {
+      "title": "Myyntiavustaja-agentti",
+      "description": "Tehosta myyntiäsi tekoälykäyttöisellä myyntiavustajalla. Kvalifioi liidejä, varaa tapaamisia, tarjoaa tuotetietoja ja seuraa potentiaalisia asiakkaita. Integroituu CRM-järjestelmääsi mahdollisuuksien ja konversioasteiden seuraamiseksi, varmistaen ettei mikään liidi putoa verkosta.",
+      "chatNow": "Keskustele nyt"
+    },
+    "dataAnalyst": {
+      "title": "Data-analyytikkoagentti",
+      "description": "Muunna datasi toimiviksi oivalluksiksi kehittyneen data-analyytikkoagenttimme avulla. Suorittaa monimutkaisia analyysejä, luo raportteja, tuottaa visualisointeja ja tunnistaa trendejä. Yhdistyy tietokantoihisi ja analytiikkatyökaluihisi tarjotakseen reaaliaikaista liiketoimintatietoa ja ennakoivaa analytiikkaa.",
+      "chatNow": "Keskustele nyt"
+    }
+  },
+  "footer": {
+    "description": "Älykkäät tekoälyagentit liiketoiminnan automaatioon ja kasvuun. Muuta toimintaasi yritystason tekoälyllä, joka skaalautuu.",
+    "product": "Tuote",
+    "support": "Tuki",
+    "features": "Ominaisuudet",
+    "pricing": "Hinnoittelu",
+    "integrations": "Integraatiot",
+    "helpCenter": "Tukikeskus",
+    "documentation": "Dokumentaatio",
+    "contact": "Yhteystiedot",
+    "copyright": "© 2025 AgentFlow. Kaikki oikeudet pidätetään.",
+    "terms": "Käyttöehdot",
+    "privacy": "Tietosuojakäytäntö",
+    "cookies": "Evästekäytäntö",
+    "language": "Kieli"
+  },
+  "common": {
+    "loading": "Ladataan...",
+    "scrollToTop": "Siirry ylös"
+  }
+}
