@@ -248,17 +248,16 @@ const Index = () => {
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline" className="border-primary/20">
               <Bot className="w-3 h-3 mr-1" />
-              AI Agents
+              {t('agents.badge')}
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold">
-              Meet our{" "}
+              {t('agents.title')}{" "}
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                AI Agents
+                {t('agents.titleHighlight')}
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Specialized AI agents ready to handle your most complex tasks.
-              Choose the right agent for your needs.
+              {t('agents.subtitle')}
             </p>
           </div>
 
@@ -266,9 +265,9 @@ const Index = () => {
           <div className="flex justify-center mb-12">
             <div className="inline-flex rounded-lg bg-muted p-1">
               {[
-                { name: "Customer Support", id: 0 },
-                { name: "Sales Assistant", id: 1 },
-                { name: "Data Analyst", id: 2 },
+                { name: t('agents.tabs.customerSupport'), id: 0 },
+                { name: t('agents.tabs.salesAssistant'), id: 1 },
+                { name: t('agents.tabs.dataAnalyst'), id: 2 },
               ].map((tab) => (
                 <button
                   key={tab.id}
