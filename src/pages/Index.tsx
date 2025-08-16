@@ -511,20 +511,19 @@ const Index = () => {
                 </span>
               </div>
               <p className="text-muted-foreground max-w-md leading-relaxed">
-                Intelligent AI agents for business automation and growth.
-                Transform your operations with enterprise-grade AI that scales.
+                {t('footer.description')}
               </p>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-semibold">Product</h4>
+              <h4 className="font-semibold">{t('footer.product')}</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li>
                   <a
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    Features
+                    {t('footer.features')}
                   </a>
                 </li>
                 <li>
@@ -532,7 +531,7 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    Pricing
+                    {t('footer.pricing')}
                   </a>
                 </li>
                 <li>
@@ -540,21 +539,21 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    Integrations
+                    {t('footer.integrations')}
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-semibold">Support</h4>
+              <h4 className="font-semibold">{t('footer.support')}</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li>
                   <a
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    Help Center
+                    {t('footer.helpCenter')}
                   </a>
                 </li>
                 <li>
@@ -562,7 +561,7 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    Documentation
+                    {t('footer.documentation')}
                   </a>
                 </li>
                 <li>
@@ -570,7 +569,7 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    Contact
+                    {t('footer.contact')}
                   </a>
                 </li>
               </ul>
@@ -579,27 +578,30 @@ const Index = () => {
 
           <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © 2025 AgentFlow. All rights reserved.
+              {t('footer.copyright')}
             </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link
-                to="/terms"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Terms of Service
-              </Link>
-              <Link
-                to="/privacy-policy"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                to="/cookie-policy"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Cookie Policy
-              </Link>
+            <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mt-4 md:mt-0 items-center">
+              <div className="flex space-x-6">
+                <Link
+                  to="/terms"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t('footer.terms')}
+                </Link>
+                <Link
+                  to="/privacy-policy"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t('footer.privacy')}
+                </Link>
+                <Link
+                  to="/cookie-policy"
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {t('footer.cookies')}
+                </Link>
+              </div>
+              <LanguageToggle />
             </div>
           </div>
         </div>
@@ -613,7 +615,7 @@ const Index = () => {
           size="icon"
         >
           <ArrowUp className="h-5 w-5 text-white group-hover:scale-110 transition-transform" />
-          <span className="sr-only">Scroll to top</span>
+          <span className="sr-only">{t('common.scrollToTop')}</span>
         </Button>
       )}
 
