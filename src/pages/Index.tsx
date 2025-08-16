@@ -70,7 +70,7 @@ const Index = () => {
           <h2 className="text-xl font-semibold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
             AgentFlow
           </h2>
-          <p className="text-muted-foreground">{t('common.loading')}</p>
+          <p className="text-muted-foreground">{t("common.loading")}</p>
         </div>
       </div>
     );
@@ -112,28 +112,28 @@ const Index = () => {
             </a>
             */}
             <Button variant="outline" size="sm" onClick={openLoginModal}>
-              {t('header.signIn')}
+              {t("header.signIn")}
             </Button>
             <Button
               size="sm"
               className="bg-gradient-to-r from-primary to-purple-600"
               onClick={openRegisterModal}
             >
-              {t('header.getStarted')}
+              {t("header.getStarted")}
             </Button>
           </div>
 
           {/* Mobile Menu for Authentication */}
           <div className="md:hidden flex items-center space-x-2">
             <Button variant="outline" size="sm" onClick={openLoginModal}>
-              {t('header.signIn')}
+              {t("header.signIn")}
             </Button>
             <Button
               size="sm"
               className="bg-gradient-to-r from-primary to-purple-600"
               onClick={openRegisterModal}
             >
-              {t('header.getStarted')}
+              {t("header.getStarted")}
             </Button>
           </div>
         </div>
@@ -152,7 +152,7 @@ const Index = () => {
               className="text-xs uppercase tracking-wider border-primary/30 bg-primary/5 text-primary font-mono"
             >
               <Bot className="w-3 h-3 mr-2" />
-              {t('hero.aiPlatform')}
+              {t("hero.aiPlatform")}
             </Badge>
           </div>
 
@@ -161,14 +161,14 @@ const Index = () => {
             {/* Main Heading */}
             <div className="space-y-6">
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05]">
-                <div className="block">{t('hero.title1')}</div>
+                <div className="block">{t("hero.title1")}</div>
                 <div className="block bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
-                  {t('hero.title2')}
+                  {t("hero.title2")}
                 </div>
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                {t('hero.subtitle')}
+                {t("hero.subtitle")}
               </p>
             </div>
 
@@ -203,7 +203,7 @@ const Index = () => {
                     className="h-20 px-16 text-lg font-semibold bg-gradient-to-r from-amber-100 to-orange-100 hover:from-amber-200 hover:to-orange-200 text-gray-900 rounded-full shadow-2xl border-2 border-amber-200/50 transition-all duration-300 hover:scale-105"
                   >
                     <div className="flex items-center gap-4">
-                      <span>{t('hero.tryAgent')}</span>
+                      <span>{t("hero.tryAgent")}</span>
                       <div className="relative">
                         <Mic className="h-6 w-6" />
                         <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-600 rounded-full animate-ping opacity-20"></div>
@@ -248,16 +248,16 @@ const Index = () => {
           <div className="text-center space-y-4 mb-16">
             <Badge variant="outline" className="border-primary/20">
               <Bot className="w-3 h-3 mr-1" />
-              {t('agents.badge')}
+              {t("agents.badge")}
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold">
-              {t('agents.title')}{" "}
+              {t("agents.title")}{" "}
               <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                {t('agents.titleHighlight')}
+                {t("agents.titleHighlight")}
               </span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              {t('agents.subtitle')}
+              {t("agents.subtitle")}
             </p>
           </div>
 
@@ -265,9 +265,9 @@ const Index = () => {
           <div className="flex justify-center mb-12">
             <div className="inline-flex rounded-lg bg-muted p-1">
               {[
-                { name: t('agents.tabs.customerSupport'), id: 0 },
-                { name: t('agents.tabs.salesAssistant'), id: 1 },
-                { name: t('agents.tabs.dataAnalyst'), id: 2 },
+                { name: t("agents.tabs.customerSupport"), id: 0 },
+                { name: t("agents.tabs.salesAssistant"), id: 1 },
+                { name: t("agents.tabs.dataAnalyst"), id: 2 },
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -293,16 +293,18 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">{t('agents.customerSupport.title')}</h3>
+                  <h3 className="text-2xl font-bold">
+                    {t("agents.customerSupport.title")}
+                  </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t('agents.customerSupport.description')}
+                    {t("agents.customerSupport.description")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                     >
-                      {t('agents.customerSupport.chatNow')}
+                      {t("agents.customerSupport.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -317,16 +319,18 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">{t('agents.salesAssistant.title')}</h3>
+                  <h3 className="text-2xl font-bold">
+                    {t("agents.salesAssistant.title")}
+                  </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t('agents.salesAssistant.description')}
+                    {t("agents.salesAssistant.description")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                     >
-                      {t('agents.salesAssistant.chatNow')}
+                      {t("agents.salesAssistant.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -341,16 +345,18 @@ const Index = () => {
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto">
                     <Bot className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="text-2xl font-bold">{t('agents.dataAnalyst.title')}</h3>
+                  <h3 className="text-2xl font-bold">
+                    {t("agents.dataAnalyst.title")}
+                  </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t('agents.dataAnalyst.description')}
+                    {t("agents.dataAnalyst.description")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700"
                     >
-                      {t('agents.dataAnalyst.chatNow')}
+                      {t("agents.dataAnalyst.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -511,19 +517,19 @@ const Index = () => {
                 </span>
               </div>
               <p className="text-muted-foreground max-w-md leading-relaxed">
-                {t('footer.description')}
+                {t("footer.description")}
               </p>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-semibold">{t('footer.product')}</h4>
+              <h4 className="font-semibold">{t("footer.product")}</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li>
                   <a
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    {t('footer.features')}
+                    {t("footer.features")}
                   </a>
                 </li>
                 <li>
@@ -531,7 +537,7 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    {t('footer.pricing')}
+                    {t("footer.pricing")}
                   </a>
                 </li>
                 <li>
@@ -539,21 +545,21 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    {t('footer.integrations')}
+                    {t("footer.integrations")}
                   </a>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-semibold">{t('footer.support')}</h4>
+              <h4 className="font-semibold">{t("footer.support")}</h4>
               <ul className="space-y-3 text-sm text-muted-foreground">
                 <li>
                   <a
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    {t('footer.helpCenter')}
+                    {t("footer.helpCenter")}
                   </a>
                 </li>
                 <li>
@@ -561,7 +567,7 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    {t('footer.documentation')}
+                    {t("footer.documentation")}
                   </a>
                 </li>
                 <li>
@@ -569,7 +575,7 @@ const Index = () => {
                     href="#"
                     className="hover:text-foreground transition-colors"
                   >
-                    {t('footer.contact')}
+                    {t("footer.contact")}
                   </a>
                 </li>
               </ul>
@@ -578,7 +584,7 @@ const Index = () => {
 
           <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              {t('footer.copyright')}
+              {t("footer.copyright")}
             </p>
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 mt-4 md:mt-0 items-center">
               <div className="flex space-x-6">
@@ -586,19 +592,19 @@ const Index = () => {
                   to="/terms"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  {t('footer.terms')}
+                  {t("footer.terms")}
                 </Link>
                 <Link
                   to="/privacy-policy"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  {t('footer.privacy')}
+                  {t("footer.privacy")}
                 </Link>
                 <Link
                   to="/cookie-policy"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  {t('footer.cookies')}
+                  {t("footer.cookies")}
                 </Link>
               </div>
               <LanguageToggle />
@@ -615,7 +621,7 @@ const Index = () => {
           size="icon"
         >
           <ArrowUp className="h-5 w-5 text-white group-hover:scale-110 transition-transform" />
-          <span className="sr-only">{t('common.scrollToTop')}</span>
+          <span className="sr-only">{t("common.scrollToTop")}</span>
         </Button>
       )}
 
