@@ -786,6 +786,73 @@
       "button": "Contact Support"
     }
   },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team. We're here to help you succeed with AI automation.",
+    "form": {
+      "title": "Send us a message",
+      "description": "Fill out the form below and we'll get back to you as soon as possible.",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "company": "Company",
+      "companyPlaceholder": "Enter your company name (optional)",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjects": {
+        "general": "General Inquiry",
+        "sales": "Sales & Pricing",
+        "support": "Technical Support",
+        "partnership": "Partnership Opportunity",
+        "billing": "Billing & Account",
+        "automation": "Request for Automation"
+      },
+      "message": "Message",
+      "messageAutomation": "Tell us what you need automated",
+      "messagePlaceholder": "Tell us how we can help you...",
+      "messagePlaceholderAutomation": "Describe your automation requirements...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Your message has been sent successfully! We'll get back to you soon.",
+      "errorMessage": "Failed to send message. Please try again later."
+    },
+    "info": {
+      "title": "Get in Touch",
+      "description": "Choose the best way to reach us",
+      "email": {
+        "title": "Email Support"
+      },
+      "telegram": {
+        "title": "Telegram Chat",
+        "description": "Fast response for urgent inquiries"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "weekdays": "Monday - Friday: 9:00 AM - 6:00 PM",
+        "timezone": "Central European Time (CET)"
+      },
+      "company": {
+        "title": "Company Information",
+        "name": "Alfaliike OY",
+        "businessId": "Business ID: 3362393-3",
+        "address": "Piisaminkatu 12, 48770 Kotka, Finland",
+        "email": "info@alfa-automations.com",
+        "telegram": "https://t.me/+IsKv_g0XXWo1ZjBk"
+      }
+    },
+    "response": {
+      "title": "Quick Response",
+      "description": "We typically respond within 24 hours during business days"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "helpCenter": "Visit Help Center",
+      "telegram": "Join Telegram Chat"
+    }
+  },
   "common": {
     "loading": "Loading...",
     "scrollToTop": "Scroll to top",

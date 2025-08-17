@@ -8,6 +8,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import { body, validationResult } from "express-validator";
+import nodemailer from "nodemailer";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -19,6 +20,33 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const JWT_SECRET =
   process.env.JWT_SECRET || "your-secret-key-change-in-production";
+
+// Email configuration
+const createEmailTransporter = () => {
+  if (process.env.EMAIL_SERVICE && process.env.EMAIL_USER && process.env.EMAIL_PASS) {
+    // Use configured email service (Gmail, Outlook, etc.)
+    return nodemailer.createTransporter({
+      service: process.env.EMAIL_SERVICE,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+  } else {
+    // Use Ethereal Email for testing (creates test account automatically)
+    return nodemailer.createTestAccount().then((testAccount) => {
+      return nodemailer.createTransporter({
+        host: "smtp.ethereal.email",
+        port: 587,
+        secure: false,
+        auth: {
+          user: testAccount.user,
+          pass: testAccount.pass,
+        },
+      });
+    });
+  }
+};
 
 // Middleware
 app.use(cors());
@@ -598,6 +626,101 @@ app.get("/api/my-bookings", authenticateToken, (req, res) => {
     },
   );
 });
+
+// Contact form endpoint
+app.post(
+  "/api/contact",
+  [
+    body("firstName").notEmpty().trim().escape(),
+    body("lastName").notEmpty().trim().escape(),
+    body("email").isEmail().normalizeEmail(),
+    body("company").optional().trim().escape(),
+    body("subject").notEmpty().trim().escape(),
+    body("message").notEmpty().trim().escape(),
+  ],
+  async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
+
+    const { firstName, lastName, email, company, subject, message } = req.body;
+
+    try {
+      // Create email transporter
+      const transporter = await createEmailTransporter();
+
+      // Email content
+      const emailHtml = `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #333; border-bottom: 2px solid #4995BE; padding-bottom: 10px;">
+            New Contact Form Submission
+          </h2>
+
+          <div style="background: #f9f9f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
+            <h3 style="color: #2E4392; margin-top: 0;">Contact Information</h3>
+            <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
+            <p><strong>Subject:</strong> ${subject}</p>
+          </div>
+
+          <div style="background: #fff; padding: 20px; border-left: 4px solid #6CC1E3; margin: 20px 0;">
+            <h3 style="color: #2E4392; margin-top: 0;">Message</h3>
+            <p style="line-height: 1.6; white-space: pre-wrap;">${message}</p>
+          </div>
+
+          <div style="margin-top: 30px; padding: 15px; background: #E6E9EF; border-radius: 4px; font-size: 12px; color: #666;">
+            <p>This email was sent from the Alfa Automations contact form.</p>
+            <p>Submitted on: ${new Date().toLocaleString('en-US', { timeZone: 'Europe/Helsinki' })} (CET)</p>
+          </div>
+        </div>
+      `;
+
+      const emailText = `
+        New Contact Form Submission
+
+        Name: ${firstName} ${lastName}
+        Email: ${email}
+        ${company ? `Company: ${company}\n` : ''}Subject: ${subject}
+
+        Message:
+        ${message}
+
+        Submitted on: ${new Date().toLocaleString('en-US', { timeZone: 'Europe/Helsinki' })} (CET)
+      `;
+
+      // Send email
+      const info = await transporter.sendMail({
+        from: process.env.EMAIL_USER || '"Alfa Automations Contact Form" <contact@alfa-automations.com>',
+        to: "info@alfa-automations.com",
+        subject: `Contact Form: ${subject}`,
+        text: emailText,
+        html: emailHtml,
+        replyTo: email,
+      });
+
+      console.log("Message sent: %s", info.messageId);
+
+      // If using Ethereal (test mode), log the preview URL
+      if (info.response && info.response.includes('ethereal')) {
+        console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+      }
+
+      res.status(200).json({
+        success: true,
+        message: "Your message has been sent successfully! We'll get back to you soon.",
+      });
+
+    } catch (error) {
+      console.error("Error sending email:", error);
+      res.status(500).json({
+        success: false,
+        error: "Failed to send message. Please try again later.",
+      });
+    }
+  }
+);
 
 // Error handling middleware
 app.use((error, req, res, next) => {

@@ -74,12 +74,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="hover:text-foreground transition-colors"
                 >
                   {t("footer.contact")}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

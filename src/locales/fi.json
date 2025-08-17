@@ -216,7 +216,7 @@
       },
       "intellectualProperty": {
         "title": "Immateriaalioikeudet",
-        "content1": "Palvelut, mukaan lukien kaikki sisältö, ominaisuudet ja toiminnallisuus, ovat Alfa Automationsin omaisuutta ja niitä suojaavat tekijänoikeus-, tavaramerkki- ja muut immateriaalioikeuslait.",
+        "content1": "Palvelut, mukaan lukien kaikki sisältö, ominaisuudet ja toiminnallisuus, ovat Alfa Automationsin omaisuutta ja niitä suojaavat tekij��noikeus-, tavaramerkki- ja muut immateriaalioikeuslait.",
         "content2": "Sinulle myönnetään rajoitettu, ei-yksinomainen, ei-siirrettävä lisenssi käyttää palveluja näiden ehtojen mukaisesti. Tämä lisenssi ei sisällä oikeutta:",
         "restrictions": [
           "Jälleenmyydä tai hyödyntää palveluja kaupallisesti",
@@ -237,7 +237,7 @@
       },
       "changes": {
         "title": "Ehtojen muutokset",
-        "content1": "Voimme muuttaa näitä ehtoja milloin tahansa. Ilmoitamme olennaisista muutoksista julkaisemalla päivitetyt ehdot verkkosivustollamme ja päivittämäll�� \"Viimeksi päivitetty\" -päivämäärän. Palvelujen käytön jatkaminen tällaisten muutosten jälkeen merkitsee uusien ehtojen hyväksymistä."
+        "content1": "Voimme muuttaa näitä ehtoja milloin tahansa. Ilmoitamme olennaisista muutoksista julkaisemalla päivitetyt ehdot verkkosivustollamme ja päivittämällä \"Viimeksi päivitetty\" -päivämäärän. Palvelujen käytön jatkaminen tällaisten muutosten jälkeen merkitsee uusien ehtojen hyväksymistä."
       }
     }
   },
@@ -784,6 +784,73 @@
       "title": "Tarvitsetko vielä apua?",
       "description": "Etkö löydä etsimääsi? Tukitiimimme on täällä auttamassa.",
       "button": "Ota yhteyttä tukeen"
+    }
+  },
+  "contact": {
+    "title": "Ota yhteyttä",
+    "subtitle": "Ota yhteyttä tiimiimme. Olemme täällä auttamassa sinua menestymään tekoälyautomaatiossa.",
+    "form": {
+      "title": "Lähetä meille viesti",
+      "description": "Täytä alla oleva lomake, niin otamme sinuun yhteyttä mahdollisimman pian.",
+      "firstName": "Etunimi",
+      "firstNamePlaceholder": "Syötä etunimesi",
+      "lastName": "Sukunimi",
+      "lastNamePlaceholder": "Syötä sukunimesi",
+      "email": "Sähköpostiosoite",
+      "emailPlaceholder": "Syötä sähköpostiosoitteesi",
+      "company": "Yritys",
+      "companyPlaceholder": "Syötä yrityksesi nimi (valinnainen)",
+      "subject": "Aihe",
+      "subjectPlaceholder": "Valitse aihe",
+      "subjects": {
+        "general": "Yleinen kysely",
+        "sales": "Myynti ja hinnoittelu",
+        "support": "Tekninen tuki",
+        "partnership": "Yhteistyömahdollisuus",
+        "billing": "Laskutus ja tili",
+        "automation": "Automaatiopyyntö"
+      },
+      "message": "Viesti",
+      "messageAutomation": "Kerro mitä haluat automatisoida",
+      "messagePlaceholder": "Kerro meille, miten voimme auttaa sinua...",
+      "messagePlaceholderAutomation": "Kuvaile automaatiovaatimuksesi...",
+      "send": "Lähetä viesti",
+      "sending": "Lähettää...",
+      "successMessage": "Viestisi on lähetetty onnistuneesti! Otamme sinuun yhteyttä pian.",
+      "errorMessage": "Viestin lähettäminen epäonnistui. Yritä myöhemmin uudelleen."
+    },
+    "info": {
+      "title": "Ota yhteyttä",
+      "description": "Valitse paras tapa tavoittaa meidät",
+      "email": {
+        "title": "Sähköpostituki"
+      },
+      "telegram": {
+        "title": "Telegram-keskustelu",
+        "description": "Nopea vastaus kiireellisiin kyselyihin"
+      },
+      "hours": {
+        "title": "Aukioloajat",
+        "weekdays": "Maanantai - Perjantai: 9:00 - 18:00",
+        "timezone": "Keski-Euroopan aika (CET)"
+      },
+      "company": {
+        "title": "Yritystiedot",
+        "name": "Alfaliike OY",
+        "businessId": "Y-tunnus: 3362393-3",
+        "address": "Piisaminkatu 12, 48770 Kotka, Finland",
+        "email": "info@alfa-automations.com",
+        "telegram": "https://t.me/+IsKv_g0XXWo1ZjBk"
+      }
+    },
+    "response": {
+      "title": "Nopea vastaus",
+      "description": "Vastaamme yleensä 24 tunnin kuluessa arkipäivinä"
+    },
+    "quickLinks": {
+      "title": "Pikavalinnat",
+      "helpCenter": "Käy tukikeskuksessa",
+      "telegram": "Liity Telegram-keskusteluun"
     }
   },
   "common": {

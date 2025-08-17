@@ -19,6 +19,7 @@ import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import HelpCenter from "./pages/HelpCenter";
+import Contact from "./pages/Contact";
 import AuthTest from "./pages/AuthTest";
 import NotFound from "./pages/NotFound";
 
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/help-center" element={<HelpCenter />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/auth-test" element={<AuthTest />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
