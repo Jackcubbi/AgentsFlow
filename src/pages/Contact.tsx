@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import AuthModals from "@/components/auth/AuthModals";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -40,6 +41,10 @@ const Contact = () => {
     type: 'success' | 'error' | null;
     message: string;
   }>({ type: null, message: '' });
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [registerOpen, setRegisterOpen] = useState(false);
+
+  const openLoginModal = () => setLoginOpen(true);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -93,7 +98,12 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header showLanguageToggle={false} />
+      <Header
+        variant="default"
+        showLanguageToggle={true}
+        showAuthButtons={true}
+        onLoginClick={openLoginModal}
+      />
       
       <main className="container mx-auto px-4 py-8">
         {/* Header Section */}
@@ -377,6 +387,13 @@ const Contact = () => {
       </main>
 
       <Footer />
+
+      <AuthModals
+        loginOpen={loginOpen}
+        registerOpen={registerOpen}
+        onLoginOpenChange={setLoginOpen}
+        onRegisterOpenChange={setRegisterOpen}
+      />
     </div>
   );
 };

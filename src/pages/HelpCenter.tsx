@@ -29,9 +29,14 @@ import {
 } from "lucide-react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import AuthModals from "@/components/auth/AuthModals";
 
 const HelpCenter = () => {
   const { t } = useTranslation();
+  const [loginOpen, setLoginOpen] = useState(false);
+  const [registerOpen, setRegisterOpen] = useState(false);
+
+  const openLoginModal = () => setLoginOpen(true);
 
   const getTranslationArray = (key: string): string[] => {
     const result = t(key, { returnObjects: true });
@@ -78,7 +83,12 @@ const HelpCenter = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <Header showLanguageToggle={false} />
+      <Header
+        variant="default"
+        showLanguageToggle={true}
+        showAuthButtons={true}
+        onLoginClick={openLoginModal}
+      />
       
       <main className="container mx-auto px-4 py-8">
         {/* Header Section */}
@@ -173,6 +183,13 @@ const HelpCenter = () => {
       </main>
 
       <Footer />
+
+      <AuthModals
+        loginOpen={loginOpen}
+        registerOpen={registerOpen}
+        onLoginOpenChange={setLoginOpen}
+        onRegisterOpenChange={setRegisterOpen}
+      />
     </div>
   );
 };

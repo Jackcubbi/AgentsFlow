@@ -75,7 +75,7 @@ const CookiePolicy = () => {
       {/* Navigation */}
       <Header
         variant="default"
-        showLanguageToggle={false}
+        showLanguageToggle={true}
         showAuthButtons={true}
         onLoginClick={openLoginModal}
       />

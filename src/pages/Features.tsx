@@ -41,7 +41,7 @@ const Features = () => {
       {/* Navigation */}
       <Header
         variant="default"
-        showLanguageToggle={false}
+        showLanguageToggle={true}
         showAuthButtons={true}
         onLoginClick={() => setLoginOpen(true)}
       />

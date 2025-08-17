@@ -126,7 +126,7 @@ const Pricing = () => {
       {/* Navigation */}
       <Header
         variant="default"
-        showLanguageToggle={false}
+        showLanguageToggle={true}
         showAuthButtons={true}
         onLoginClick={openLoginModal}
       />
