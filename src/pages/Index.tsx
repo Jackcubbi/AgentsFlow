@@ -216,9 +216,9 @@ const Index = () => {
           <div className="flex justify-center mb-12">
             <div className="inline-flex rounded-lg bg-muted p-1">
               {[
-                { name: t("agents.tabs.customerSupport"), id: 0 },
-                { name: t("agents.tabs.salesAssistant"), id: 1 },
-                { name: t("agents.tabs.dataAnalyst"), id: 2 },
+                { name: t("agents.tabs.personalAssistant"), id: 0 },
+                { name: t("agents.tabs.businessAssistant"), id: 1 },
+                { name: t("agents.tabs.chatAssystant"), id: 2 },
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -245,17 +245,23 @@ const Index = () => {
                     <Bot className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">
-                    {t("agents.customerSupport.title")}
+                    {t("agents.personalAssistant.title")}
                   </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.customerSupport.description")}
+                    {t("agents.personalAssistant.description1")}
+                  </p>
+                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                    {t("agents.personalAssistant.description2")}
+                  </p>
+                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                    {t("agents.personalAssistant.description3")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                     >
-                      {t("agents.customerSupport.chatNow")}
+                      {t("agents.personalAssistant.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -271,17 +277,23 @@ const Index = () => {
                     <Bot className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">
-                    {t("agents.salesAssistant.title")}
+                    {t("agents.businessAssistant.title")}
                   </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.salesAssistant.description")}
+                    {t("agents.businessAssistant.description1")}
+                  </p>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                    {t("agents.businessAssistant.description2")}
+                  </p>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                    {t("agents.businessAssistant.description3")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
                     >
-                      {t("agents.salesAssistant.chatNow")}
+                      {t("agents.businessAssistant.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>
@@ -297,17 +309,23 @@ const Index = () => {
                     <Bot className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold">
-                    {t("agents.dataAnalyst.title")}
+                    {t("agents.chatAssystant.title")}
                   </h3>
                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.dataAnalyst.description")}
+                    {t("agents.chatAssystant.description1")}
+                  </p>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                    {t("agents.chatAssystant.description2")}
+                  </p>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+                    {t("agents.chatAssystant.description3")}
                   </p>
                   <div className="pt-4">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700"
                     >
-                      {t("agents.dataAnalyst.chatNow")}
+                      {t("agents.chatAssystant.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Button>
                   </div>

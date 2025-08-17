@@ -18,23 +18,29 @@
     "titleHighlight": "AI Agents",
     "subtitle": "Specialized AI agents ready to handle your most complex tasks. Choose the right agent for your needs.",
     "tabs": {
-      "customerSupport": "Customer Support",
-      "salesAssistant": "Sales Assistant",
-      "dataAnalyst": "Data Analyst"
+      "personalAssistant": "Personal Assistant",
+      "businessAssistant": "Business Assistant",
+      "chatAssystant": "Chat Assistant"
     },
-    "customerSupport": {
-      "title": "Customer Support Agent",
-      "description": "Our intelligent customer support agent handles inquiries 24/7, providing instant responses to common questions, routing complex issues to human agents, and maintaining complete conversation history. Trained on your knowledge base for accurate, personalized support.",
+    "personalAssistant": {
+      "title": "Personal Telegram Assistant",
+      "description1": "Your voice → tasks, notes, and actions.  ",
+      "description2": "What it does: Transcribes voice and text; handles photos/PDFs (receipts, IDs, VIN/MPN labels).",
+      "description3": "Extracts key fields; returns clean JSON + human summary. Routes to email, calendar, Google Sheets/HubSpot; remembers context and past chats. Optional voice replies back to Telegram. Ideal for: founders, solo operators, busy managers.",
       "chatNow": "Chat Now"
     },
-    "salesAssistant": {
-      "title": "Sales Assistant Agent",
-      "description": "Boost your sales with our AI-powered sales assistant. Qualifies leads, schedules meetings, provides product information, and follows up with prospects. Integrates with your CRM to track opportunities and conversion rates, ensuring no lead falls through the cracks.",
+    "businessAssistant": {
+      "title": "Business Assistant (industry-ready)",
+      "description1": "Industry integrations that save hours.",
+      "description2": "What it does (pick per client): HVAC / Field service: Voice intake → Name, Address, Phone, Job type, Status, Budget, Deadline → push to Sheets/HubSpot; confirmations in Telegram. Repair shop / Parts: OCR labels & invoices; VIN/MPN extraction; optional eBay price scan and merged listing. Marketing agency / SMB ops: Lead capture, reminders, calendar hand-off, client summaries; Sheets/HubSpot sync.",
+      "description3": "Tech: Built on n8n/LangChain with OpenAI + FastAPI; EU hosting.",
       "chatNow": "Chat Now"
     },
-    "dataAnalyst": {
-      "title": "Data Analyst Agent",
-      "description": "Transform your data into actionable insights with our advanced data analyst agent. Performs complex analysis, generates reports, creates visualizations, and identifies trends. Connects to your databases and analytics tools to provide real-time business intelligence and predictive analytics.",
+    "chatAssystant": {
+      "title": "Group Chat Assistant for Telegram",
+      "description1": "Answers when called. Stays silent otherwise.",
+      "description2": "What it does: Lives in your group; replies only when addressed by name (no spam). Fetches articles, news, memes on request; concise, stylish replies (or a single emoji). Optional: schedule posts/tips and quick polls via n8n timers.",
+      "description3": "Use cases: community chats, team rooms, private clubs.",
       "chatNow": "Chat Now"
     }
   },
