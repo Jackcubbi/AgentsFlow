@@ -126,7 +126,7 @@ const Pricing = () => {
       {/* Navigation */}
       <Header
         variant="default"
-        showLanguageToggle={true}
+        showLanguageToggle={false}
         showAuthButtons={true}
         onLoginClick={openLoginModal}
       />
@@ -159,11 +159,11 @@ const Pricing = () => {
             {plans.map((plan) => {
               const IconComponent = plan.icon;
               return (
-                <Card 
-                  key={plan.id} 
+                <Card
+                  key={plan.id}
                   className={`relative overflow-hidden transition-all duration-300 hover:shadow-xl ${
-                    plan.popular 
-                      ? 'border-primary shadow-lg scale-105 bg-gradient-to-br from-background to-primary/5' 
+                    plan.popular
+                      ? 'border-primary shadow-lg scale-105 bg-gradient-to-br from-background to-primary/5'
                       : 'hover:scale-105'
                   }`}
                 >
@@ -172,7 +172,7 @@ const Pricing = () => {
                       {t('pricing.mostPopular')}
                     </div>
                   )}
-                  
+
                   <CardHeader className={plan.popular ? "pt-8" : ""}>
                     <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${plan.color} flex items-center justify-center mb-4`}>
                       <IconComponent className="h-6 w-6 text-white" />
@@ -210,10 +210,10 @@ const Pricing = () => {
                   </CardContent>
 
                   <CardFooter>
-                    <Button 
+                    <Button
                       className={`w-full ${
-                        plan.popular 
-                          ? 'bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90' 
+                        plan.popular
+                          ? 'bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90'
                           : ''
                       }`}
                       variant={plan.popular ? "default" : "outline"}

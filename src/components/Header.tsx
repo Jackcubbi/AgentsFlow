@@ -42,7 +42,7 @@ const Header = ({
     return (
       <div className="flex items-center space-x-4">
         {showLanguageToggle && <LanguageToggle />}
-        
+
         {showAuthButtons && (
           <>
             {user ? (
@@ -92,7 +92,7 @@ const Header = ({
             Alfa Automations
           </span>
         </Link>
-        
+
         {renderActions()}
       </div>
     </nav>

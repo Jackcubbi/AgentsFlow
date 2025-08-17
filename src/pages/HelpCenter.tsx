@@ -54,7 +54,7 @@ const HelpCenter = () => {
     {
       id: "data-hosting",
       icon: Database,
-      titleKey: "helpCenter.categories.dataHosting.title", 
+      titleKey: "helpCenter.categories.dataHosting.title",
       descriptionKey: "helpCenter.categories.dataHosting.description",
       questions: getTranslationArray("helpCenter.categories.dataHosting.questions")
     },
@@ -62,7 +62,7 @@ const HelpCenter = () => {
       id: "communication",
       icon: MessageSquare,
       titleKey: "helpCenter.categories.communication.title",
-      descriptionKey: "helpCenter.categories.communication.description", 
+      descriptionKey: "helpCenter.categories.communication.description",
       questions: getTranslationArray("helpCenter.categories.communication.questions")
     },
     {
@@ -85,11 +85,11 @@ const HelpCenter = () => {
     <div className="min-h-screen bg-background">
       <Header
         variant="default"
-        showLanguageToggle={true}
+        showLanguageToggle={false}
         showAuthButtons={true}
         onLoginClick={openLoginModal}
       />
-      
+
       <main className="container mx-auto px-4 py-8">
         {/* Header Section */}
         <div className="mb-8">
@@ -101,7 +101,7 @@ const HelpCenter = () => {
               </Link>
             </Button>
           </div>
-          
+
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
               <div className="p-3 bg-primary/10 rounded-full">

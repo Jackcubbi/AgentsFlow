@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
       {/* Navigation */}
       <Header
         variant="default"
-        showLanguageToggle={true}
+        showLanguageToggle={false}
         showAuthButtons={true}
         onLoginClick={openLoginModal}
       />
