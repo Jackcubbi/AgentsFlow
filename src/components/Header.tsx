@@ -93,6 +93,10 @@ const Header = ({
           </span>
         </Link>
 
+        <div className="demo-place md:flex items-center space-x-4">
+          <span className="text-red-600 text-xl">This is a test version (demo) of the service.</span>
+        </div>
+
         {renderActions()}
       </div>
     </nav>
