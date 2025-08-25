@@ -44,8 +44,8 @@ const Pricing = () => {
     {
       id: "starter",
       name: t('pricing.plans.starter.name'),
-      price: "€149",
-      setupFee: "€299",
+      price: "€99",
+      setupFee: "€99",
       description: t('pricing.plans.starter.description'),
       icon: Bot,
       color: "from-blue-500 to-blue-600",
@@ -63,8 +63,8 @@ const Pricing = () => {
     {
       id: "pro",
       name: t('pricing.plans.pro.name'),
-      price: "€349",
-      setupFee: "€599",
+      price: "€299",
+      setupFee: "€299",
       description: t('pricing.plans.pro.description'),
       icon: Zap,
       color: "from-green-500 to-green-600",
@@ -99,26 +99,7 @@ const Pricing = () => {
       ],
       buttonText: t('pricing.upgrade'),
       popular: false,
-    },
-    {
-      id: "enterprise",
-      name: t('pricing.plans.enterprise.name'),
-      price: t('pricing.plans.enterprise.price'),
-      setupFee: t('pricing.plans.enterprise.setupFee'),
-      description: t('pricing.plans.enterprise.description'),
-      icon: Crown,
-      color: "from-orange-500 to-red-600",
-      features: [
-        { icon: Shield, text: t('pricing.plans.enterprise.features.deployment') },
-        { icon: Building2, text: t('pricing.plans.enterprise.features.sso') },
-        { icon: FileText, text: t('pricing.plans.enterprise.features.audit') },
-        { icon: Shield, text: t('pricing.plans.enterprise.features.dpa') },
-        { icon: Zap, text: t('pricing.plans.enterprise.features.sla') },
-        { icon: Crown, text: t('pricing.plans.enterprise.features.quotas') },
-      ],
-      buttonText: t('pricing.contactSales'),
-      popular: false,
-    },
+    }
   ];
 
   return (
@@ -155,7 +136,7 @@ const Pricing = () => {
       {/* Pricing Cards */}
       <section className="py-20">
         <div className="container">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {plans.map((plan) => {
               const IconComponent = plan.icon;
               return (
@@ -189,9 +170,9 @@ const Pricing = () => {
                         <span className="text-3xl font-bold">{plan.price}</span>
                         {plan.id !== 'enterprise' && <span className="text-muted-foreground">/mo</span>}
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      {/*<p className="text-sm text-muted-foreground">
                         {t('pricing.setupFee')}: {plan.setupFee}
-                      </p>
+                      </p>*/}
                     </div>
 
                     <Separator />
