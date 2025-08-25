@@ -29,7 +29,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <a
-                  href="#"
+                  href="/features"
                   className="hover:text-foreground transition-colors"
                 >
                   {t("footer.features")}
