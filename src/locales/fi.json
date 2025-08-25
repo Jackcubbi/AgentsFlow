@@ -8,9 +8,9 @@
   "hero": {
     "aiPlatform": "TEKOÄLY AUTOMAATIOALUSTA",
     "title1": "AI-avustajat,",
-    "title2": "jotka tekevät työn puolestasi",
-    "subtitle": "Ääni sisään, jäsennelty data ulos. Kerää liidit, lue kuvat/PDF:t ja synkronoi Google Sheetsiä/HubSpotia varten. EU-hosting. Prototyyppi 48 tunnissa",
-    "tryAgent": "Avaa Telegram-demo"
+    "title2": "jotka säästävät sinulta tunteja joka päivä",
+    "subtitle": "Muunna puhe, teksti tai tiedostot selkeäksi dataksi ja toiminnoiksi. Kerää liidit, synkronoi Google Sheetsin & HubSpotin kanssa, automatisoi päivittäiset tehtävät. EU-hosting. Prototyyppi 48 tunnissa.",
+    "tryAgent": "Kokeile Live-demolla"
   },
   "agents": {
     "badge": "Tekoälyagentit",
@@ -19,29 +19,36 @@
     "subtitle": "Erikoistuneet tekoälyagentit valmiina hoitamaan monimutkaisimmat tehtäväsi. Valitse tarpeisiisi sopiva agentti.",
     "tabs": {
       "personalAssistant": "Henkilökohtainen avustaja",
-      "businessAssistant": "Liiketoiminnan avustaja",
-      "chatAssystant": "Chat-avustaja"
+      "businessAssistant": "Toimialakohtainen avustaja",
+      "chatAssystant": "Ryhmäavustaja (Telegram)"
     },
     "personalAssistant": {
-      "title": "Henkilökohtainen avustaja",
-      "description1": "Äänimuistiinpanot → tehtäviksi, muistiinpanoiksi ja toimiksi.",
-      "description2": "Mitä tekee: Purkaa puheen ja tekstin; käsittelee kuvat/PDF:t (kuitit, henkilötiedot, VIN/MPN-tarrat). Poimii avaintiedot; palauttaa selkeän JSONin + yhteenvedon. Ohjaa sähköpostiin, kalenteriin, Google Sheetsiä/HubSpotia varten; muistaa kontekstin ja aiemmat chatit. Valinnainen äänivastaus Telegramiin.",
-      "description3": "Kenelle: yrittäjät, yksinyrittäjät, kiireiset esihenkilöt.",
-      "chatNow": "Keskustele nyt"
+      "title": "Henkilökohtainen Telegram-avustaja",
+      "subtitle": "Toinen aivosi Telegramissa",
+      "description1": "Muuntaa äänimuistiinpanot tehtäviksi, muistutuksiksi tai asiakastiedoiksi",
+      "description2": "Lukee PDF:t/kuvat (kuitit, henkilötodistukset, VIN:t) ja poimii olennaiset tiedot",
+      "description3": "Synkronoituu Google Sheetsin, HubSpotin, sähköpostin ja kalenterin kanssa",
+      "description4": "Muistaa keskustelujen kontekstin ja vastaa tekstillä tai äänellä",
+      "description5": "Täydellinen: perustajille, freelancereille, kiireisille toimijoille",
+      "chatNow": "Kokeile Telegramissa"
     },
     "businessAssistant": {
       "title": "Liiketoiminnan avustaja",
-      "description1": "Toimialaintegraatiot, jotka säästävät tunteja",
-      "description2": "Mitä tekee (valitse asiakkaalle): LVI / kenttätyö: Ääni-intake → Nimi, Osoite, Puhelin, Työn tyyppi, Status, Budjetti, Deadline → Google Sheets/HubSpot; vahvistukset Telegramissa. Korjaamo / varaosat: OCR tarroista ja laskuista; VIN/MPN-poiminta; valinnainen eBay-hintahaku ja kooste. Markkinointitoimisto / SMB: Liidien keruu, muistutukset, kalenteriin siirto, asiakas-yhteenvedot; Sheets/HubSpot-synkka.",
-      "description3": "Tekniikka: n8n/LangChain + OpenAI + FastAPI; EU-hosting.",
-      "chatNow": "Keskustele nyt"
+      "subtitle": "Säästä tunteja toimialakohtaisilla automaatioilla",
+      "description1": "LVI & kenttäpalvelut → Äänellä syötetty → Nimi, osoite, työn tyyppi, budjetti, deadline → automaattisesti CRM:ään/Sheetsiin",
+      "description2": "Korjaamot → OCR-laskut ja tarrat, VIN/MPN-haku, eBay-hinnoittelu ja yhdistetyt listaukset",
+      "description3": "Toimistot & pk-yritykset → Liidien keruu, muistutukset, asiakasyhteenvedot, kalenterin siirrot, HubSpot-synkronointi",
+      "description4": "Tekniikka: Rakennettu n8n + LangChain + OpenAI, EU-hosting",
+      "chatNow": "Katso demo toimialallesi"
     },
     "chatAssystant": {
       "title": "Chat-avustaja",
-      "description1": "Vastaa, kun häntä kutsutaan. Muuten on hiljaa.",
-      "description2": "Mitä tekee: Toimii ryhmässä; vastaa vain nimellä kutsuttuna (ei spämmää). Hakee artikkeleita, uutisia, meemejä pyynnöstä; napakat vastaukset (tai pelkkä emoji). Valinnainen: ajastetut julkaisut ja nopeat kyselyt n8n-ajastimilla.",
-      "description3": "Käyttö: yhteisöchatit, tiimihuoneet, privaattikerhot.",
-      "chatNow": "Keskustele nyt"
+      "subtitle": "Tee ryhmästäsi fiksumpi, ei meluisampi",
+      "description1": "Vastaa vain, kun tägätään → ei roskapostia",
+      "description2": "Hakee uutisia, artikkeleita, meemejä, faktoja",
+      "description3": "Voi aikatauluttaa julkaisuja, tehdä kyselyitä, lähettää muistutuksia",
+      "description4": "Täydellinen yhteisöryhmiin, yksityisiin klubeihin ja sisäisiin tiimeihin",
+      "chatNow": "Lisää Telegram-ryhmään"
     }
   },
   "footer": {

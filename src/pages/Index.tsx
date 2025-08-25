@@ -109,7 +109,7 @@ const Index = () => {
           <div className="max-w-7xl mx-auto text-center space-y-12">
             {/* Main Heading */}
             <div className="space-y-6">
-              <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05]">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05]">
                 <div className="block">{t("hero.title1")}</div>
                 <div className="block text-primary">
                   {t("hero.title2")}
@@ -240,23 +240,33 @@ const Index = () => {
             {/* Customer Support Agent */}
             {activeTab === 0 && (
               <div className="bg-background rounded-2xl border shadow-lg p-8 animate-in fade-in-0 duration-300">
-                <div className="text-center space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
-                    <Bot className="w-8 h-8 text-white" />
+                <div className="space-y-6 flex items-left justify-left flex-col">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
+                      <Bot className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold mt-4">
+                      {t("agents.personalAssistant.title")}
+                    </h3>
                   </div>
-                  <h3 className="text-2xl font-bold">
-                    {t("agents.personalAssistant.title")}
-                  </h3>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.personalAssistant.description1")}
-                  </p>
-                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.personalAssistant.description2")}
-                  </p>
-                   <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.personalAssistant.description3")}
-                  </p>
-                  <div className="pt-4">
+                  <ul className="space-y-4 list-none max-w-2xl mx-auto shadow-md p-10 rounded-lg">
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.personalAssistant.description1")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.personalAssistant.description2")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.personalAssistant.description3")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3 ">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.personalAssistant.description4")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.personalAssistant.description5")}
+                    </li>
+                  </ul>
+                  <div className="pt-4 text-center">
                     <Button
                       size="lg"
                       className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
@@ -272,26 +282,33 @@ const Index = () => {
             {/* Sales Assistant Agent */}
             {activeTab === 1 && (
               <div className="bg-background rounded-2xl border shadow-lg p-8 animate-in fade-in-0 duration-300">
-                <div className="text-center space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto">
-                    <Bot className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold">
+                <div className="space-y-6 flex items-left justify-left flex-col">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
+                      <Bot className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold">
                     {t("agents.businessAssistant.title")}
                   </h3>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.businessAssistant.description1")}
-                  </p>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.businessAssistant.description2")}
-                  </p>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.businessAssistant.description3")}
-                  </p>
-                  <div className="pt-4">
+                  </div>
+                  <ul className="space-y-4 list-none max-w-2xl mx-auto shadow-md p-10 rounded-lg">
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.businessAssistant.description1")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.businessAssistant.description2")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.businessAssistant.description3")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.businessAssistant.description4")}
+                    </li>
+                  </ul>
+                  <div className="pt-4 text-center">
                     <Button
                       size="lg"
-                      className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
+                      className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                     >
                       {t("agents.businessAssistant.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />
@@ -304,26 +321,33 @@ const Index = () => {
             {/* Data Analyst Agent */}
             {activeTab === 2 && (
               <div className="bg-background rounded-2xl border shadow-lg p-8 animate-in fade-in-0 duration-300">
-                <div className="text-center space-y-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto">
-                    <Bot className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold">
+                <div className="space-y-6 flex items-left justify-left flex-col">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto">
+                      <Bot className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-2xl font-bold">
                     {t("agents.chatAssystant.title")}
                   </h3>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.chatAssystant.description1")}
-                  </p>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.chatAssystant.description2")}
-                  </p>
-                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                    {t("agents.chatAssystant.description3")}
-                  </p>
-                  <div className="pt-4">
+                  </div>
+                  <ul className="space-y-4 list-none max-w-2xl mx-auto shadow-md p-10 rounded-lg">
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.chatAssystant.description1")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.chatAssystant.description2")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.chatAssystant.description3")}
+                    </li>
+                    <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
+                      <ArrowRight className="h-4 ml-2" />{t("agents.chatAssystant.description4")}
+                    </li>
+                  </ul>
+                  <div className="pt-4 text-center">
                     <Button
                       size="lg"
-                      className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700"
+                      className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
                     >
                       {t("agents.chatAssystant.chatNow")}
                       <ArrowRight className="w-4 h-4 ml-2" />

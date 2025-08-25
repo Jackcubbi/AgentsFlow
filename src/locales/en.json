@@ -8,9 +8,9 @@
   "hero": {
     "aiPlatform": "AI AUTOMATION PLATFORM",
     "title1": "AI Assistants",
-    "title2": "that actually do the work",
-    "subtitle": "Voice in, structured data out. Capture leads, read photos/PDFs, and sync to Google Sheets/HubSpot. EU hosting. Prototype in 48 hours",
-    "tryAgent": "Open Telegram demo"
+    "title2": "That Save You Hours Every Day",
+    "subtitle": "Turn voice, text, or files into clean data and actions. Capture leads, sync with Google Sheets & HubSpot, automate daily tasks. EU hosting. Prototype in 48 hours.",
+    "tryAgent": "Try Live Demo"
   },
   "agents": {
     "badge": "AI Agents",
@@ -20,28 +20,35 @@
     "tabs": {
       "personalAssistant": "Personal Assistant",
       "businessAssistant": "Business Assistant",
-      "chatAssystant": "Chat Assistant"
+      "chatAssystant": "Chat Assistant (Group Telegram)"
     },
     "personalAssistant": {
       "title": "Personal Telegram Assistant",
-      "description1": "Your voice → tasks, notes, and actions.  ",
-      "description2": "What it does: Transcribes voice and text; handles photos/PDFs (receipts, IDs, VIN/MPN labels).",
-      "description3": "Extracts key fields; returns clean JSON + human summary. Routes to email, calendar, Google Sheets/HubSpot; remembers context and past chats. Optional voice replies back to Telegram. Ideal for: founders, solo operators, busy managers.",
-      "chatNow": "Chat Now"
+      "subtitle": "Your second brain in Telegram.",
+      "description1": "Converts your voice notes into tasks, reminders, or client data",
+      "description2": "Reads PDFs/photos (receipts, IDs, VINs) and extracts key fields",
+      "description3": "Syncs with Google Sheets, HubSpot, email, calendar",
+      "description4": "Remembers context across chats, replies with text or voice",
+      "description5": "Perfect for: founders, freelancers, busy operators",
+      "chatNow": "Try It in Telegram"
     },
     "businessAssistant": {
       "title": "Business Assistant (industry-ready)",
-      "description1": "Industry integrations that save hours.",
-      "description2": "What it does (pick per client): HVAC / Field service: Voice intake → Name, Address, Phone, Job type, Status, Budget, Deadline → push to Sheets/HubSpot; confirmations in Telegram. Repair shop / Parts: OCR labels & invoices; VIN/MPN extraction; optional eBay price scan and merged listing. Marketing agency / SMB ops: Lead capture, reminders, calendar hand-off, client summaries; Sheets/HubSpot sync.",
-      "description3": "Tech: Built on n8n/LangChain with OpenAI + FastAPI; EU hosting.",
-      "chatNow": "Chat Now"
+      "subtitle": "Save hours with industry-specific automations.",
+      "description1": "HVAC & Field Service → Voice intake → Name, Address, Job type, Budget, Deadline → auto push to CRM/Sheets",
+      "description2": "Repair Shops → OCR invoices & labels, VIN/MPN extraction, eBay pricing & merged listings",
+      "description3": "Agencies & SMBs → Lead capture, reminders, client summaries, calendar hand-off, HubSpot sync",
+      "description4": "Tech: Built on n8n + LangChain + OpenAI, EU hosting.",
+      "chatNow": "See Demo for Your Industry"
     },
     "chatAssystant": {
       "title": "Group Chat Assistant for Telegram",
-      "description1": "Answers when called. Stays silent otherwise.",
-      "description2": "What it does: Lives in your group; replies only when addressed by name (no spam). Fetches articles, news, memes on request; concise, stylish replies (or a single emoji). Optional: schedule posts/tips and quick polls via n8n timers.",
-      "description3": "Use cases: community chats, team rooms, private clubs.",
-      "chatNow": "Chat Now"
+      "subtitle": "Make your group smarter, not noisier.",
+      "description1": "Responds only when tagged → no spam",
+      "description2": "Fetches news, articles, memes, quick facts",
+      "description3": "Can schedule posts, run polls, send reminders",
+      "description4": "Perfect for community chats, private clubs, internal teams",
+      "chatNow": "Add to Telegram Group"
     }
   },
   "footer": {
