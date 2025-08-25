@@ -111,7 +111,7 @@ const Index = () => {
             <div className="space-y-6">
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05]">
                 <div className="block">{t("hero.title1")}</div>
-                <div className="block bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                <div className="block text-primary">
                   {t("hero.title2")}
                 </div>
               </h1>
