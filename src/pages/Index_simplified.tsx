@@ -155,7 +155,7 @@ const Index = () => {
             <div className="space-y-6">
               <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.05]">
                 <div className="block">AI agents for</div>
-                <div className="block bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
+                <div className="block text-primary bg-clip-text">
                   your business
                 </div>
               </h1>
@@ -236,8 +236,8 @@ const Index = () => {
       </section>
 
       {/* ARCHIVED SECTIONS - Uncomment as needed */}
-      {/* 
-      
+      {/*
+
       STATS SECTION:
       <section className="py-16 bg-gradient-to-r from-primary/5 to-purple-500/5 border-y border-primary/10">
         Stats content...

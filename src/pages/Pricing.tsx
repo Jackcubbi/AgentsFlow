@@ -141,7 +141,7 @@ const Pricing = () => {
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               {t('pricing.title')}
-              <span className="block bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <span className="block text-primary bg-clip-text">
                 {t('pricing.titleHighlight')}
               </span>
             </h1>

@@ -63,7 +63,7 @@ const Features = () => {
 
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
               Powerful AI Features
-              <span className="bg-gradient-to-r from-primary via-purple-600 to-blue-600 bg-clip-text text-transparent block">
+              <span className="text-primary bg-clip-text block">
                 Built for Scale
               </span>
             </h1>
