@@ -15,7 +15,7 @@ const Footer = () => {
               <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-purple-600">
                 <Bot className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+              <span className="text-xl font-bold text-primary bg-clip-text ">
                 Alfa Automations
               </span>
             </div>

@@ -203,7 +203,7 @@ const Index = () => {
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold">
               {t("agents.title")}{" "}
-              <span className="bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+              <span className="text-primary bg-clip-text">
                 {t("agents.titleHighlight")}
               </span>
             </h2>
