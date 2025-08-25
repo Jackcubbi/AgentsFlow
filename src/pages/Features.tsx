@@ -49,7 +49,7 @@ const Features = () => {
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-purple-500/5" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgb(148_163_184)_1px,transparent_0)] bg-[size:20px_20px] opacity-20 h-auto flex-grow" />
 
         <div className="container relative">
           <div className="mx-auto max-w-4xl text-center space-y-8">
