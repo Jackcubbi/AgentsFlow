@@ -741,6 +741,10 @@
           {
             "question": "Can we mix assistant types?",
             "answer": "Yes—Personal, Business, and Group. Our platform supports multiple assistant types that can work together seamlessly, allowing you to create a comprehensive automation ecosystem tailored to different use cases and user groups."
+          },
+          {
+            "question": "What does it cost?",
+            "answer": "Demo is free, business plans on request."
           }
         ]
       },
@@ -751,6 +755,10 @@
           {
             "question": "Where is data hosted?",
             "answer": "All data is hosted in the EU using Hetzner infrastructure. We maintain strict access controls with comprehensive logging and monitoring enabled to ensure maximum security and compliance with GDPR regulations."
+          },
+          {
+            "question": "Is my data secure?",
+            "answer": "Yes, your data is secure. All data is hosted in the EU using Hetzner infrastructure. We maintain strict access controls with comprehensive logging and monitoring enabled to ensure maximum security and compliance with GDPR regulations."
           }
         ]
       },
@@ -775,6 +783,10 @@
           {
             "question": "Can you integrate other CRMs?",
             "answer": "Yes—custom integration €199–€499 one-time. We can develop custom integrations for most CRM systems beyond our standard offerings. The cost depends on the complexity of the integration and specific requirements."
+          },
+          {
+            "question": "Do I need coding skills?",
+            "answer": "No, everything is turnkey"
           }
         ]
       },

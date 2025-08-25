@@ -741,6 +741,10 @@
           {
             "question": "Voimmeko yhdistää avustajatyyppejä?",
             "answer": "Kyllä—Henkilökohtainen, Yritys ja Ryhmä. Alustamme tukee useita avustajatyyppejä, jotka voivat toimia saumattomasti yhdessä, mahdollistaen kattavan automaatioekosysteemin luomisen eri käyttötapauksiin ja käyttäjäryhmiin."
+          },
+          {
+            "question": "Paljonko se maksaa?",
+            "answer": "Demo on ilmainen, liiketoimintasuunnitelmat pyynnöstä."
           }
         ]
       },
@@ -751,6 +755,10 @@
           {
             "question": "Missä data sijaitsee?",
             "answer": "EU:ssa (Hetzner). Käyttöoikeudet; lokit ja monitorointi päällä. Ylläpidämme tiukkoja käyttöoikeuksia kattavalla lokien seurannalla ja valvonnalla GDPR-säädösten noudattamiseksi."
+          },
+          {
+            "question": "Onko datani turvallista?",
+            "answer": "Kyllä, datasi on turvallista. Kaikki data on tallennettu EU:hun Hetznerin infrastruktuurin avulla. Ylläpidämme tiukkoja käyttöoikeuksia kattavalla lokien seurannalla ja valvonnalla GDPR-säädösten noudattamiseksi."
           }
         ]
       },
@@ -775,6 +783,10 @@
           {
             "question": "Voitteko integroida muita CRM-järjestelmiä?",
             "answer": "Kyllä—räätälöity integraatio €199–€499 kertamaksu. Voimme kehittää räätälöityjä integraatioita useimmille CRM-järjestelmille tavallisten tarjontamme lisäksi. Hinta riippuu integraation monimutkaisuudesta ja erityisvaatimuksista."
+          },
+          {
+            "question": "Tarvitaanko koodaustaitoja?",
+            "answer": "Ei, kaikki on avaimet käteen -ratkaisu."
           }
         ]
       },

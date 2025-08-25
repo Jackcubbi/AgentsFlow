@@ -249,7 +249,7 @@ const Index = () => {
                       {t("agents.personalAssistant.title")}
                     </h3>
                   </div>
-                  <ul className="space-y-4 list-none max-w-2xl mx-auto shadow-md p-10 rounded-lg">
+                  <ul className="space-y-4 list-none max-w-2xl mx-auto p-10 rounded-lg">
                     <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
                       <ArrowRight className="h-4 ml-2" />{t("agents.personalAssistant.description1")}
                     </li>
@@ -291,7 +291,7 @@ const Index = () => {
                     {t("agents.businessAssistant.title")}
                   </h3>
                   </div>
-                  <ul className="space-y-4 list-none max-w-2xl mx-auto shadow-md p-10 rounded-lg">
+                  <ul className="space-y-4 list-none max-w-2xl mx-auto p-10 rounded-lg">
                     <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
                       <ArrowRight className="h-4 ml-2" />{t("agents.businessAssistant.description1")}
                     </li>
@@ -330,7 +330,7 @@ const Index = () => {
                     {t("agents.chatAssystant.title")}
                   </h3>
                   </div>
-                  <ul className="space-y-4 list-none max-w-2xl mx-auto shadow-md p-10 rounded-lg">
+                  <ul className="space-y-4 list-none max-w-2xl mx-auto p-10 rounded-lg">
                     <li className="text-lg text-muted-foreground leading-relaxed flex items-center gap-3">
                       <ArrowRight className="h-4 ml-2" />{t("agents.chatAssystant.description1")}
                     </li>
