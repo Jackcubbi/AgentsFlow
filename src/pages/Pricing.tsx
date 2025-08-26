@@ -28,6 +28,7 @@ import {
   Activity,
   Logs,
   BotMessageSquare,
+  Sheet,
 } from "lucide-react";
 
 const Pricing = () => {
@@ -79,7 +80,7 @@ const Pricing = () => {
       color: "from-blue-500 to-blue-600",
       features: [
         { icon: Bot, text: t('pricing.plans.starter.features.assistants') },
-        { icon: MessageSquare, text: t('pricing.plans.starter.features.messages') },
+        { icon: Sheet, text: t('pricing.plans.starter.features.messages') },
         { icon: FileText, text: t('pricing.plans.starter.features.ocr') },
         { icon: Mic, text: t('pricing.plans.starter.features.voice') },
         { icon: Clock, text: t('pricing.plans.starter.features.logs') },

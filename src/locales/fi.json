@@ -82,49 +82,49 @@
     "plans": {
       "demo": {
         "name": "Demo",
-        "description": "Try before you buy. For pilots and single use-cases.",
+        "description": "Kokeile ennen ostoa. Pilotteihin ja yksittäisiin käyttötapauksiin.",
         "month": "kk",
         "features": {
-          "assistants": "1 assistant (basic)",
-          "messages": "Text chat in Telegram",
-          "ocr": "Google Sheets integration",
-          "voice": "No OCR / no advanced voice",
-          "sla": "Limited support (email, 72h)",
-          "webhooks": "Context memory (short-term)",
-          "logs": "No logs"
+          "assistants": "1 assistentti (perus)",
+          "messages": "Tekstikeskustelu Telegramissa",
+          "ocr": "Google Sheets -integraatio",
+          "voice": "Ei OCR:ää / ei kehittynyttä ääntä",
+          "sla": "Rajoitettu tuki (sähköposti, 72h)",
+          "webhooks": "Kontekstimuisti (lyhytaikainen)",
+          "logs": "Ei lokitietoja"
         }
       },
       "starter": {
         "name": "Starter",
-        "description": "For freelancers and small teams.",
+        "description": "Freelancereille ja pienille tiimeille.",
         "month": "kk",
         "features": {
-          "assistants": "1 assistant (Personal or Group)",
-          "messages": "Google Sheets sync",
-          "ocr": "Google Calendar task creation",
-          "voice": "Voice-to-text (basic, create tasks by voice)",
-          "logs": "7-day logs",
-          "webhooks": "Image & document processing (basic OCR: receipts, IDs, PDFs)",
-          "support": "Email support (48h)",
-          "memory": "Context memory (30 days)"
+          "assistants": "1 assistentti (henkilökohtainen tai ryhmä)",
+          "messages": "Google Sheets -synkronointi",
+          "ocr": "Google Calendar -tehtävien luominen",
+          "voice": "Voice-to-text (perus, luo tehtäviä äänellä)",
+          "logs": "7 päivän lokit",
+          "webhooks": "Kuvan ja asiakirjan käsittely (perus OCR: kuitit, henkilökortit, PDF:t)",
+          "support": "Sähköpostituki (48h)",
+          "memory": "Kontekstimuisti (30 päivää)"
         }
       },
       "pro": {
         "name": "Pro",
-        "description": "For growing businesses and agencies.",
+        "description": "Kasvaville yrityksille ja toimistoille.",
         "month": "kk",
         "features": {
-          "assistants": "Up to 3 assistants",
-          "messages": "HubSpot & CRM integration",
-          "ocr": "Advanced OCR (PDFs, invoices, VIN/MPN, multi-page docs)",
-          "voice": "Advanced voice control (hands-free data entry)",
-          "integrations": "Google Sheets/HubSpot sync",
-          "integrations2": "Integration with your own services (custom APIs)",
-          "trigger": "Scheduled triggers (time-based automation)",
-          "workflows": "Tailored workflows & individual solutions",
-          "sla": "SLA 99.5% uptime",
-          "support": "Priority support (24h response)",
-          "logs": "90-day logs"
+          "assistants": "Jopa 3 assistenttia",
+          "messages": "HubSpot & CRM -integraatio",
+          "ocr": "Kehittynyt OCR (PDF:t, laskut, VIN/MPN, monisivuiset asiakirjat)",
+          "voice": "Kehittynyt äänenhallinta (käsivapaa tietojen syöttö)",
+          "integrations": "Google Sheets/HubSpot -synkronointi",
+          "integrations2": "Integraatio omien palveluidesi kanssa (räätälöidyt API:t)",
+          "trigger": "Aikataulutetut laukaisimet (aikaperusteinen automaatio)",
+          "workflows": "Räätälöidyt työnkulut & yksilölliset ratkaisut",
+          "sla": "SLA 99,5 % käyttöaika",
+          "support": "Prioriteettituki (24h vastausaika)",
+          "logs": "90 päivän lokit"
         }
       }
     },
