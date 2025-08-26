@@ -51,6 +51,35 @@
       "chatNow": "Lisää Telegram-ryhmään"
     }
   },
+  "chooseus": {
+    "badge": "Valita meidät",
+    "title": "Miksi valita meidät",
+    "subtitle": "",
+    "featureblock1": {
+      "title": "24/7 saatavuus",
+      "description": ""
+    },
+    "featureblock2": {
+      "title": "Helppo integraatio (Telegram, WhatsApp, Sheets, HubSpot)",
+      "description": ""
+    },
+    "featureblock3": {
+      "title": "EU-hosting (GDPR-yhteensopiva)",
+      "description": ""
+    },
+    "featureblock4": {
+      "title": "Käynnistys 48 tunnissa",
+      "description": ""
+    },
+    "featureblock5": {
+      "title": "Ei koodausta",
+      "description": ""
+    },
+    "featureblock6": {
+      "title": "Räätälöitävissä mille tahansa toimialalle",
+      "description": ""
+    }
+  },
   "footer": {
     "description": "Älykkäät tekoälyagentit liiketoiminnan automaatioon ja kasvuun. Muuta toimintaasi yritystason tekoälyllä, joka skaalautuu.",
     "product": "Tuote",

@@ -51,6 +51,35 @@
       "chatNow": "Add to Telegram Group"
     }
   },
+  "chooseus": {
+    "badge": "Choose Us",
+    "title": "Why Choose Us",
+    "subtitle": "",
+    "featureblock1": {
+      "title": "24/7 availability",
+      "description": ""
+    },
+    "featureblock2": {
+      "title": "Easy integrations (Telegram, WhatsApp, Sheets, HubSpot)",
+      "description": ""
+    },
+    "featureblock3": {
+      "title": "EU hosting (GDPR-ready)",
+      "description": ""
+    },
+    "featureblock4": {
+      "title": "Launch in 48 hours",
+      "description": ""
+    },
+    "featureblock5": {
+      "title": "No coding needed",
+      "description": ""
+    },
+    "featureblock6": {
+      "title": "Customizable for any business",
+      "description": ""
+    }
+  },
   "footer": {
     "description": "Intelligent AI agents for business automation and growth. Transform your operations with enterprise-grade AI that scales.",
     "product": "Product",

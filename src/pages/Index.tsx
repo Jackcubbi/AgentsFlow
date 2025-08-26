@@ -15,7 +15,15 @@ import {
   Sparkles,
   ArrowUp,
   Mic,
+  Globe,
+  Code,
+  Database,
+  Smartphone,
 } from "lucide-react";
+import {
+  Card,
+  CardContent,
+} from "@/components/ui/card";
 
 const Index = () => {
   const { user, loading } = useAuth();
@@ -356,6 +364,89 @@ const Index = () => {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Capabilities */}
+      <section className="py-20 bg-gradient-to-br from-secondary/30 to-primary/5">
+        <div className="container">
+          <div className="text-center space-y-4 mb-16">
+            <Badge variant="outline" className="border-primary/20">
+              <Code className="w-3 h-3 mr-1" />
+              {t("chooseus.badge")}
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold">
+              <span className="text-primary">
+                {" "}
+                {t("chooseus.title")}
+              </span>
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 lg:grid-cols-5 gap-5">
+            <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Code className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">{t("chooseus.featureblock1.title")}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {t("chooseus.featureblock1.description")}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Database className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="font-semibold mb-2">{t("chooseus.featureblock2.title")}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {t("chooseus.featureblock2.description")}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-green-500/10 to-emerald-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Globe className="h-6 w-6 text-green-600" />
+                </div>
+                <h3 className="font-semibold mb-2">{t("chooseus.featureblock3.title")}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {t("chooseus.featureblock3.description")}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Smartphone className="h-6 w-6 text-orange-600" />
+                </div>
+                <h3 className="font-semibold mb-2">{t("chooseus.featureblock4.title")}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {t("chooseus.featureblock4.description")}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-6 text-center">
+                <div className="w-12 h-12 bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Smartphone className="h-6 w-6 text-orange-600" />
+                </div>
+                <h3 className="font-semibold mb-2">{t("chooseus.featureblock5.title")}</h3>
+                <p className="text-sm text-muted-foreground">
+                  {t("chooseus.featureblock5.description")}
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
