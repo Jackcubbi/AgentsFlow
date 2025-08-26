@@ -19,6 +19,9 @@ import {
   Code,
   Database,
   Smartphone,
+  Clock,
+  Blocks,
+  Rocket,
 } from "lucide-react";
 import {
   Card,
@@ -391,7 +394,7 @@ const Index = () => {
             <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-purple-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Clock className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-2">{t("chooseus.featureblock1.title")}</h3>
                 <p className="text-sm text-muted-foreground">
@@ -403,7 +406,7 @@ const Index = () => {
             <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Database className="h-6 w-6 text-blue-600" />
+                  <Blocks className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold mb-2">{t("chooseus.featureblock2.title")}</h3>
                 <p className="text-sm text-muted-foreground">
@@ -427,7 +430,7 @@ const Index = () => {
             <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Smartphone className="h-6 w-6 text-orange-600" />
+                  <Rocket className="h-6 w-6 text-orange-600" />
                 </div>
                 <h3 className="font-semibold mb-2">{t("chooseus.featureblock4.title")}</h3>
                 <p className="text-sm text-muted-foreground">
@@ -438,8 +441,8 @@ const Index = () => {
 
             <Card className="bg-background border-0 shadow-md hover:shadow-lg transition-all duration-300">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500/10 to-red-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                  <Smartphone className="h-6 w-6 text-orange-600" />
+                <div className="w-12 h-12 bg-gradient-to-br from-primary/10 to-red-500/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <Code className="h-6 w-6 text-orange-600" />
                 </div>
                 <h3 className="font-semibold mb-2">{t("chooseus.featureblock5.title")}</h3>
                 <p className="text-sm text-muted-foreground">
