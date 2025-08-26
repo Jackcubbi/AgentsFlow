@@ -80,6 +80,58 @@
       "description": ""
     }
   },
+  "features": {
+    "badge": "Features",
+    "title": "Powerful Features for",
+    "titleHighlight": "Smarter Automation",
+    "subtitle": "Everything you need to capture data, automate workflows, and save hours every day.",
+    "list": {
+      "voice": {
+        "title": "Voice → Data",
+        "description": "Speak naturally — get structured tasks, leads, or client info in seconds."
+      },
+      "ocr": {
+        "title": "OCR & File Reading",
+        "description": "Extract data from photos, receipts, invoices, IDs, VIN/MPN labels."
+      },
+      "context": {
+        "title": "Context Memory",
+        "description": "Assistants remember past conversations and adapt to your workflow."
+      },
+      "integration": {
+        "title": "Multi-Channel Integration",
+        "description": "Works in Telegram, WhatsApp, email, and syncs with Google Sheets & HubSpot."
+      },
+      "workflows": {
+        "title": "Automated Workflows",
+        "description": "Route tasks to calendar, CRM, or internal tools — no manual copy-paste."
+      },
+      "replies": {
+        "title": "Instant Replies 24/7",
+        "description": "Clients get answers any time of day, without waiting."
+      },
+      "agents": {
+        "title": "Custom Agents per Industry",
+        "description": "HVAC, repair shops, agencies, SMBs — tailored to your needs."
+      },
+      "hosting": {
+        "title": "GDPR-Ready EU Hosting",
+        "description": "Data is safe, private, and fully compliant."
+      },
+      "prototype": {
+        "title": "Prototype in 48 Hours",
+        "description": "Get a working assistant in just two days, not weeks."
+      },
+      "scalable": {
+        "title": "Scalable & Affordable",
+        "description": "Start small, scale as your business grows — no extra hires."
+      }
+    },
+    "cta": {
+      "title": "Ready to try it yourself?",
+      "button": "Get Started with a Live Demo"
+    }
+  },
   "footer": {
     "description": "Intelligent AI agents for business automation and growth. Transform your operations with enterprise-grade AI that scales.",
     "product": "Product",

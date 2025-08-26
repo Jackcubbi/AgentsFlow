@@ -80,6 +80,58 @@
       "description": ""
     }
   },
+  "features": {
+    "badge": "Ominaisuudet",
+    "title": "Tehokkaat ominaisuudet",
+    "titleHighlight": "Älykkäämpi automaatio",
+    "subtitle": "Kaikki, mitä tarvitset tietojen keräämiseen, työnkulkujen automatisointiin ja tuntien säästämiseen joka päivä.",
+    "list": {
+      "voice": {
+        "title": "Ääni → Tieto",
+        "description": "Puhu luonnollisesti — saat jäsenneltyjä tehtäviä, liidejä tai asiakastietoja sekunneissa."
+      },
+      "ocr": {
+        "title": "OCR & Tiedostojen lukeminen",
+        "description": "Poimi tietoja valokuvista, kuiteista, laskuista, henkilötodistuksista, VIN/MPN-tarroista."
+      },
+      "context": {
+        "title": "Kontekstimuisti",
+        "description": "Avustajat muistavat aiemmat keskustelut ja mukautuvat työnkulkuusi."
+      },
+      "integration": {
+        "title": "Monikanavaintegraatio",
+        "description": "Toimii Telegramissa, WhatsAppissa, sähköpostissa ja synkronoituu Google Sheetsin ja HubSpotin kanssa."
+      },
+      "workflows": {
+        "title": "Automaattiset työnkulut",
+        "description": "Reititä tehtävät kalenteriin, CRM:ään tai sisäisiin työkaluihin — ei manuaalista kopioimista ja liittämistä."
+      },
+      "replies": {
+        "title": "Pikavastauksia 24/7",
+        "description": "Asiakkaat saavat vastauksia milloin tahansa ilman odottamista."
+      },
+      "agents": {
+        "title": "Mukautetut agentit toimialoittain",
+        "description": "HVAC, korjaamot, toimistot, PK-yritykset — räätälöity tarpeidesi mukaan."
+      },
+      "hosting": {
+        "title": "GDPR-Valmis EU Hosting",
+        "description": "Data on turvallista, yksityistä ja täysin vaatimusten mukaista."
+      },
+      "prototype": {
+        "title": "Prototyyppi 48 tunnissa",
+        "description": "Saat toimivan avustajan vain kahdessa päivässä, ei viikoissa."
+      },
+      "scalable": {
+        "title": "Skaalautuva & Edullinen",
+        "description": "Aloita pienestä, skaalaa liiketoimintasi kasvaessa — ei ylimääräisiä palkkauksia."
+      }
+    },
+    "cta": {
+      "title": "Valmis kokeilemaan itse?",
+      "button": "Aloita live-demo"
+    }
+  },
   "footer": {
     "description": "Älykkäät tekoälyagentit liiketoiminnan automaatioon ja kasvuun. Muuta toimintaasi yritystason tekoälyllä, joka skaalautuu.",
     "product": "Tuote",
