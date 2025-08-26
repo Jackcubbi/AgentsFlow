@@ -80,56 +80,51 @@
     "dashboard": "Hallintapaneeli",
     "backHome": "Takaisin etusivulle",
     "plans": {
-      "starter": {
-        "name": "Aloittaja",
-        "description": "Pilotteja ja yksittäisiä käyttötapauksia varten.",
+      "demo": {
+        "name": "Demo",
+        "description": "Try before you buy. For pilots and single use-cases.",
+        "month": "kk",
         "features": {
-          "assistants": "1 avustaja (henkilökohtainen tai ryhmä)",
-          "messages": "3 000 viestiä/kk",
-          "ocr": "200 OCR-sivua",
-          "voice": "60 ääniminuuttia",
-          "logs": "7 päivän lokit",
-          "support": "Sähköpostituki (48h)"
+          "assistants": "1 assistant (basic)",
+          "messages": "Text chat in Telegram",
+          "ocr": "Google Sheets integration",
+          "voice": "No OCR / no advanced voice",
+          "sla": "Limited support (email, 72h)",
+          "webhooks": "Context memory (short-term)",
+          "logs": "No logs"
+        }
+      },
+      "starter": {
+        "name": "Starter",
+        "description": "For freelancers and small teams.",
+        "month": "kk",
+        "features": {
+          "assistants": "1 assistant (Personal or Group)",
+          "messages": "Google Sheets sync",
+          "ocr": "Google Calendar task creation",
+          "voice": "Voice-to-text (basic, create tasks by voice)",
+          "logs": "7-day logs",
+          "webhooks": "Image & document processing (basic OCR: receipts, IDs, PDFs)",
+          "support": "Email support (48h)",
+          "memory": "Context memory (30 days)"
         }
       },
       "pro": {
         "name": "Pro",
-        "description": "Kasvaville tiimeille ja pk-yritysten toiminnoille.",
+        "description": "For growing businesses and agencies.",
+        "month": "kk",
         "features": {
-          "assistants": "Jopa 3 avustajaa",
-          "messages": "12 000 viestiä/kk",
-          "ocr": "800 OCR-sivua",
-          "voice": "240 ääniminuuttia",
-          "integrations": "Google Sheets/HubSpot synkronointi",
-          "support": "Prioriteettituki (NBD)",
-          "logs": "30 päivän lokit"
-        }
-      },
-      "business": {
-        "name": "Business",
-        "description": "Monien avustajien työnkulkuja ja suurempia volyymejä varten.",
-        "features": {
-          "assistants": "Jopa 5 avustajaa + staging",
-          "messages": "30 000 viestiä/kk",
-          "ocr": "2 000 OCR-sivua",
-          "voice": "600 ääniminuuttia",
-          "sla": "SLA 99,5%, valvonta ja hälytykset",
-          "webhooks": "Mukautetut webhookit",
-          "logs": "60 päivän lokit"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "Mukautettu",
-        "setupFee": "alkaen €1 500",
-        "description": "Yksityinen EU-deployment, SSO, audit-lokit, DPA, mukautetut SLA:t ja korkeammat kiintiöt.",
-        "features": {
-          "deployment": "Yksityinen EU-deployment",
-          "sso": "SSO ja audit-lokit",
-          "audit": "Audit-lokit",
-          "dpa": "DPA-vaatimustenmukaisuus",
-          "sla": "Mukautetut SLA:t",
-          "quotas": "Korkeammat kiintiöt"
+          "assistants": "Up to 3 assistants",
+          "messages": "HubSpot & CRM integration",
+          "ocr": "Advanced OCR (PDFs, invoices, VIN/MPN, multi-page docs)",
+          "voice": "Advanced voice control (hands-free data entry)",
+          "integrations": "Google Sheets/HubSpot sync",
+          "integrations2": "Integration with your own services (custom APIs)",
+          "trigger": "Scheduled triggers (time-based automation)",
+          "workflows": "Tailored workflows & individual solutions",
+          "sla": "SLA 99.5% uptime",
+          "support": "Priority support (24h response)",
+          "logs": "90-day logs"
         }
       }
     },

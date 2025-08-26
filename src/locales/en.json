@@ -80,56 +80,51 @@
     "dashboard": "Dashboard",
     "backHome": "Back Home",
     "plans": {
+      "demo": {
+        "name": "Demo",
+        "description": "Try before you buy. For pilots and single use-cases.",
+        "month": "mo",
+        "features": {
+          "assistants": "1 assistant (basic)",
+          "messages": "Text chat in Telegram",
+          "ocr": "Google Sheets integration",
+          "voice": "No OCR / no advanced voice",
+          "sla": "Limited support (email, 72h)",
+          "webhooks": "Context memory (short-term)",
+          "logs": "No logs"
+        }
+      },
       "starter": {
         "name": "Starter",
-        "description": "For pilots and single use-cases.",
+        "description": "For freelancers and small teams.",
+        "month": "mo",
         "features": {
           "assistants": "1 assistant (Personal or Group)",
-          "messages": "3,000 messages/mo",
-          "ocr": "200 OCR pages",
-          "voice": "60 voice min",
+          "messages": "Google Sheets sync",
+          "ocr": "Google Calendar task creation",
+          "voice": "Voice-to-text (basic, create tasks by voice)",
           "logs": "7-day logs",
-          "support": "Email support (48h)"
+          "webhooks": "Image & document processing (basic OCR: receipts, IDs, PDFs)",
+          "support": "Email support (48h)",
+          "memory": "Context memory (30 days)"
         }
       },
       "pro": {
         "name": "Pro",
-        "description": "For growing teams and SMB ops.",
+        "description": "For growing businesses and agencies.",
+        "month": "mo",
         "features": {
           "assistants": "Up to 3 assistants",
-          "messages": "12,000 messages/mo",
-          "ocr": "800 OCR pages",
-          "voice": "240 voice min",
+          "messages": "HubSpot & CRM integration",
+          "ocr": "Advanced OCR (PDFs, invoices, VIN/MPN, multi-page docs)",
+          "voice": "Advanced voice control (hands-free data entry)",
           "integrations": "Google Sheets/HubSpot sync",
-          "support": "Priority support (NBD)",
-          "logs": "30-day logs"
-        }
-      },
-      "business": {
-        "name": "Business",
-        "description": "For multi-assistant workflows & higher volume.",
-        "features": {
-          "assistants": "Up to 5 assistants + staging",
-          "messages": "30,000 messages/mo",
-          "ocr": "2,000 OCR pages",
-          "voice": "600 voice min",
-          "sla": "SLA 99.5%, monitoring & alerts",
-          "webhooks": "Custom webhooks",
-          "logs": "60-day logs"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "price": "Custom",
-        "setupFee": "from €1,500",
-        "description": "Private EU deployment, SSO, audit logs, DPA, custom SLAs, and higher quotas.",
-        "features": {
-          "deployment": "Private EU deployment",
-          "sso": "SSO & audit logs",
-          "audit": "Audit logs",
-          "dpa": "DPA compliance",
-          "sla": "Custom SLAs",
-          "quotas": "Higher quotas"
+          "integrations2": "Integration with your own services (custom APIs)",
+          "trigger": "Scheduled triggers (time-based automation)",
+          "workflows": "Tailored workflows & individual solutions",
+          "sla": "SLA 99.5% uptime",
+          "support": "Priority support (24h response)",
+          "logs": "90-day logs"
         }
       }
     },

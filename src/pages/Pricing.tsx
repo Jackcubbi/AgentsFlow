@@ -23,6 +23,11 @@ import {
   Zap,
   Building2,
   Crown,
+  Blocks,
+  Workflow,
+  Activity,
+  Logs,
+  BotMessageSquare,
 } from "lucide-react";
 
 const Pricing = () => {
@@ -41,11 +46,34 @@ const Pricing = () => {
   };
 
   const plans = [
+
+    {
+      id: "demo",
+      name: t('pricing.plans.demo.name'),
+      price: "€0 / 2",
+      setupFee: "€0",
+      month: t('pricing.plans.demo.month'),
+      description: t('pricing.plans.demo.description'),
+      icon: BotMessageSquare,
+      color: "from-purple-500 to-purple-600",
+      features: [
+        { icon: Bot, text: t('pricing.plans.demo.features.assistants') },
+        { icon: MessageSquare, text: t('pricing.plans.demo.features.messages') },
+        { icon: FileText, text: t('pricing.plans.demo.features.ocr') },
+        { icon: Mic, text: t('pricing.plans.demo.features.voice') },
+        { icon: Shield, text: t('pricing.plans.demo.features.sla') },
+        { icon: Building2, text: t('pricing.plans.demo.features.webhooks') },
+        { icon: Clock, text: t('pricing.plans.demo.features.logs') },
+      ],
+      buttonText: t('pricing.upgrade'),
+      popular: false,
+    },
     {
       id: "starter",
       name: t('pricing.plans.starter.name'),
       price: "€99",
       setupFee: "€99",
+      month: t('pricing.plans.starter.month'),
       description: t('pricing.plans.starter.description'),
       icon: Bot,
       color: "from-blue-500 to-blue-600",
@@ -56,15 +84,17 @@ const Pricing = () => {
         { icon: Mic, text: t('pricing.plans.starter.features.voice') },
         { icon: Clock, text: t('pricing.plans.starter.features.logs') },
         { icon: Mail, text: t('pricing.plans.starter.features.support') },
+        { icon: FileText, text: t('pricing.plans.starter.features.memory') },
       ],
       buttonText: t('pricing.getStarted'),
-      popular: false,
+      popular: true,
     },
     {
       id: "pro",
       name: t('pricing.plans.pro.name'),
       price: "€299",
       setupFee: "€299",
+      month: t('pricing.plans.pro.month'),
       description: t('pricing.plans.pro.description'),
       icon: Zap,
       color: "from-green-500 to-green-600",
@@ -74,28 +104,12 @@ const Pricing = () => {
         { icon: FileText, text: t('pricing.plans.pro.features.ocr') },
         { icon: Mic, text: t('pricing.plans.pro.features.voice') },
         { icon: Building2, text: t('pricing.plans.pro.features.integrations') },
+        { icon: Blocks, text: t('pricing.plans.pro.features.integrations2') },
+        { icon: Clock, text: t('pricing.plans.pro.features.trigger') },
+        { icon: Workflow, text: t('pricing.plans.pro.features.workflows') },
+        { icon: Activity, text: t('pricing.plans.pro.features.sla') },
         { icon: Zap, text: t('pricing.plans.pro.features.support') },
-        { icon: Clock, text: t('pricing.plans.pro.features.logs') },
-      ],
-      buttonText: t('pricing.upgrade'),
-      popular: true,
-    },
-    {
-      id: "business",
-      name: t('pricing.plans.business.name'),
-      price: "€749",
-      setupFee: "€999",
-      description: t('pricing.plans.business.description'),
-      icon: Building2,
-      color: "from-purple-500 to-purple-600",
-      features: [
-        { icon: Bot, text: t('pricing.plans.business.features.assistants') },
-        { icon: MessageSquare, text: t('pricing.plans.business.features.messages') },
-        { icon: FileText, text: t('pricing.plans.business.features.ocr') },
-        { icon: Mic, text: t('pricing.plans.business.features.voice') },
-        { icon: Shield, text: t('pricing.plans.business.features.sla') },
-        { icon: Building2, text: t('pricing.plans.business.features.webhooks') },
-        { icon: Clock, text: t('pricing.plans.business.features.logs') },
+        { icon: Logs, text: t('pricing.plans.pro.features.logs') }
       ],
       buttonText: t('pricing.upgrade'),
       popular: false,
@@ -168,7 +182,7 @@ const Pricing = () => {
                     <div className="space-y-2">
                       <div className="flex items-baseline">
                         <span className="text-3xl font-bold">{plan.price}</span>
-                        {plan.id !== 'enterprise' && <span className="text-muted-foreground">/mo</span>}
+                        {plan.id !== 'enterprise' && <span className="text-muted-foreground">/{plan.month}</span>}
                       </div>
                       {/*<p className="text-sm text-muted-foreground">
                         {t('pricing.setupFee')}: {plan.setupFee}
